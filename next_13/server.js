@@ -4,11 +4,9 @@ const { parse } = require('url')
 const next = require('next')
 
 const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'localhost'
-const port = process.env.PORT || 3000
-
-const app = next({ dev, hostname, port })
+const app = next({ dev })
 const handle = app.getRequestHandler()
+const port = process.env.port || 3008
 
 app.prepare().then(() => {
   createServer(async (req, res) => {
@@ -30,6 +28,6 @@ app.prepare().then(() => {
     }
   }).listen(port, (err) => {
     if (err) throw err
-    console.log(`> Ready on http://${hostname}:${port}`)
+    console.log(`> Ready on http://localhost:${port}`)
   })
 })
