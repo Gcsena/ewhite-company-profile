@@ -139,7 +139,7 @@ const Home = () => {
     </div> 
 
     <div className='containerLink'>
-      <p className='OrderText'>"Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!"</p>
+      <p className='OrderText'>&ldquo; Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu! &rdquo; </p>
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
           <Image className='imgLink' src='../images/shopee.svg' width={200} height={200} alt="link" />
