@@ -1,9 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Playfair+Display:wght@700&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" );
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" );
+		
 :root {
     --font-playfair: Playfair Display, sans-serif;
 	--font-manrope:  Manrope, sans-serif;
+	--font-AbrilFat: Abril Fatface,sans-serif;
+	--font-caveat: Caveat, cursive;
 	--font-Poppins: Poppins,sans-serif;
-	
+
 }
+
 
 
 /* BTN EFFECT */
@@ -85,7 +95,7 @@ main .pg-header h1 {
 	margin: 0;
 	text-align: center;
 	justify-content: center;
-	font-family: 'Playfair Display';
+	font-family: var(--font-playfair);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 70px;
@@ -112,7 +122,7 @@ main .pg-header h1 {
 }
 
 .btn-close{
-	background-color: #fff;
+	background-color: none;
 	width: 25px;
 	height: 25px;
 	text-align: center;
@@ -905,7 +915,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 .header2C {
 display: flex;
 position: relative;
-font-family: 'Playfair Display';
+font-family: var(--font-playfair);
 font-style: normal;
 font-weight: 700;
 font-size: 26px;
@@ -969,7 +979,7 @@ text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 	width: 84px;
 	height: 23px;
 	display: flex;	
-	font-family: 'Manrope';
+	font-family: var(--font-manrope);
 	font-style: normal;
 	font-weight: 600;
 	font-size: 15px;
@@ -1100,7 +1110,7 @@ main .redbtnB {
 	padding: 8em 3em 5em 2em;
 }
 .OrderText {
-	font-family: 'Poppins';
+	font-family: var(--font-Poppins);
 	font-style: normal;
 	font-weight: 600;
 	font-size: 20px;
@@ -1376,7 +1386,7 @@ main .redbtnB {
 	font-weight: 600;
 	font-size: 48px;
 	margin-top: 2em; 
-	font-family: 'Playfair Display';
+	font-family: var(--font-playfair);
 	font-style: normal;
 	font-weight: 700;
 	text-align: center;
@@ -1408,7 +1418,7 @@ main .redbtnB {
 	height: 550px;
 }
 .carouselCaption {
-	font-family: 'Abril Fatface';
+	font-family: var(--font-AbrilFat);
 	font-size: 50px;
 	font-weight: 400;
 	color: #D1d2d3;
@@ -1449,7 +1459,7 @@ main .redbtnB {
 	margin: 0;
 	text-align: center;
 	justify-content: left;
-	font-family: 'Playfair Display';
+	font-family: var(--font-playfair);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 50px;
@@ -1695,7 +1705,7 @@ main .redbtnB {
 .captionPola {
   font-size: 1.8rem;
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: var(--font-caveat);
   line-height: 2em;
 }
 .itemPola {
@@ -2417,7 +2427,7 @@ footer {
 	background-color: #DD3D59;
 }
 .headFooter {
-	font-family: 'Playfair Display';
+	font-family: var(--font-playfair);
 	font-style: normal;
 	font-weight: 700;
 	font-size: 22px;
