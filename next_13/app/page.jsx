@@ -25,11 +25,8 @@ import halal2 from '../public/images/halal2.svg'
 import halal3 from '../public/images/halal3.svg'
 import ha from '../public/images/ha.svg'
 import halal5 from '../public/images/halal5.svg'
-<<<<<<< HEAD
 
 
-=======
->>>>>>> 495ac537d9c4ce4856a63e4b63e6f14f9e235e39
 
 // import  Accordion  from '../components/accordion.jsx';
 // import CarouselHome from '../components/carousel.jsx';
@@ -113,7 +110,6 @@ const Home = () => {
 
   <div className='containerC'>
   <div className='row'>
-<<<<<<< HEAD
   {/* <div className='col'> */}
   <Image className={styles.Halal} src={halal1} alt="halal" />
   {/* </div> */}
@@ -129,23 +125,6 @@ const Home = () => {
   {/* <div className='col'> */}
   <Image className={styles.Halal} src={halal5} alt="halal" />
   {/* </div> */}
-=======
-  <div className='col'>
-  <Image className={styles.halal} src={halal1} width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src={halal2} width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src={halal3} width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src={ha} width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src={halal5} width={200} height={200} alt="halal" />
-  </div>
->>>>>>> 495ac537d9c4ce4856a63e4b63e6f14f9e235e39
     </div>
   </div>
    <div className='containerApaYang'>
@@ -192,7 +171,7 @@ const Home = () => {
     </div> 
 
     <div className='containerLink'>
-      <p className='OrderText'>"Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!"</p>
+      <p className='OrderText'>&ldquo;Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!&rdquo;</p>
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
           <Image className={styles.imgLink} src={shopee} width={200} height={200} alt="link" />
