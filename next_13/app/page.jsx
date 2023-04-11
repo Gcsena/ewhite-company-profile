@@ -6,20 +6,23 @@ import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../app/globals.module.css'
 
-import model2 from '/public/images/model2.png'
-import produk from '/public/images/produk.png'
+import model2 from '../public/images/model2.png'
+import produk from '../public/images/produk.png'
 
-import komposisi1 from '/public/images/komposisi1.svg'
-import komposisi2 from '/public/images/komposisi2.svg'
-import komposisi3 from '/public/images/komposisi3.svg'
-import model4 from '/public/images/model/model4.png'
+import komposisi1 from '../public/images/komposisi1.svg'
+import komposisi2 from '../public/images/komposisi2.svg'
+import komposisi3 from '../public/images/komposisi3.svg'
+import model4 from '../public/images/model/model4.png'
 import modelWomenEye from '../public/images/modelWomenEye.png'
 import shopee from '../public/images/shopee.svg'
 import tokped from '../public/images/tokped.svg'
 import whatsapp from '../public/images/whatsapp.svg'
 import tiktok from '../public/images/tiktok.svg'
-
-
+import halal1 from '../public/images/halal1.svg'
+import halal2 from '../public/images/halal2.svg'
+import halal3 from '../public/images/halal3.svg'
+import ha from '../public/images/ha.svg'
+import halal5 from '../public/images/halal5.svg'
 
 // import  Accordion  from '../components/accordion.jsx';
 // import CarouselHome from '../components/carousel.jsx';
@@ -104,19 +107,19 @@ const Home = () => {
   <div className='containerC'>
   <div className='row'>
   <div className='col'>
-  <Image className={styles.halal} src='/images/halal1.svg' width={200} height={200} alt="halal" />
+  <Image className={styles.halal} src={halal1} width={200} height={200} alt="halal" />
   </div>
   <div className='col'>
-  <Image className={styles.halal} src='/images/halal2.svg' width={200} height={200} alt="halal" />
+  <Image className={styles.halal} src={halal2} width={200} height={200} alt="halal" />
   </div>
   <div className='col'>
-  <Image className={styles.halal} src='/images/halal3.svg' width={200} height={200} alt="halal" />
+  <Image className={styles.halal} src={halal3} width={200} height={200} alt="halal" />
   </div>
   <div className='col'>
-  <Image className={styles.halal} src='/images/ha.svg' width={200} height={200} alt="halal" />
+  <Image className={styles.halal} src={ha} width={200} height={200} alt="halal" />
   </div>
   <div className='col'>
-  <Image className={styles.halal} src='/images/halal5.svg' width={200} height={200} alt="halal" />
+  <Image className={styles.halal} src={halal5} width={200} height={200} alt="halal" />
   </div>
     </div>
   </div>
