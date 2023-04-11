@@ -4,7 +4,9 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../app/globals.module.css'
+import styles from '../app/styles/image.module.css'
+
+// import './image.module.css'
 
 import model2 from '/public/images/model2.png'
 import produk from '/public/images/produk.png'
@@ -18,6 +20,11 @@ import shopee from '../public/images/shopee.svg'
 import tokped from '../public/images/tokped.svg'
 import whatsapp from '../public/images/whatsapp.svg'
 import tiktok from '../public/images/tiktok.svg'
+import halal1 from '../public/images/halal1.svg'
+import halal2 from '../public/images/halal2.svg'
+import halal3 from '../public/images/halal3.svg'
+import ha from '../public/images/ha.svg'
+import halal5 from '../public/images/halal5.svg'
 
 
 
@@ -74,7 +81,7 @@ const Home = () => {
   <div className='containerB' style={{padding: '0 7em 5em 7em', position: 'relative', display: 'flex'}}>
     <div className="row">
       <div className="col-xl-4">
-       <Image   className={styles.imgB} src={produk} width={490} height={500} alt="Avatar" /> 
+       <Image className={styles.imgB} src={produk}  alt="Avatar" /> 
       </div>
       <div className="textwrapB col-xl-5">
    
@@ -103,21 +110,21 @@ const Home = () => {
 
   <div className='containerC'>
   <div className='row'>
-  <div className='col'>
-  <Image className={styles.halal} src='/images/halal1.svg' width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src='/images/halal2.svg' width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src='/images/halal3.svg' width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src='/images/ha.svg' width={200} height={200} alt="halal" />
-  </div>
-  <div className='col'>
-  <Image className={styles.halal} src='/images/halal5.svg' width={200} height={200} alt="halal" />
-  </div>
+  {/* <div className='col'> */}
+  <Image className={styles.Halal} src={halal1} alt="halal" />
+  {/* </div> */}
+  {/* <div className='col'> */}
+  <Image className={styles.Halal} src={halal2} alt="halal" />
+  {/* </div> */}
+  {/* <div className='col'> */}
+  <Image className={styles.Halal} src={halal3} alt="halal" />
+  {/* </div> */}
+  {/* <div className='col'> */}
+  <Image className={styles.Halal} src={ha} alt="halal" />
+  {/* </div> */}
+  {/* <div className='col'> */}
+  <Image className={styles.Halal} src={halal5} alt="halal" />
+  {/* </div> */}
     </div>
   </div>
    <div className='containerApaYang'>
@@ -134,17 +141,17 @@ const Home = () => {
       
       <div className="row kolagen">
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className={styles.komposisi} src={komposisi3} width={200} height={200} alt='link' />
+        <Image className={styles.komposisi} src={komposisi3} alt='link' />
           <h6 className='header2C hidden'>Collagen Tripeptide </h6>
           <p className='paragrafC hidden'>Kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className={styles.komposisi} src={komposisi2} width={200} height={200} alt='link' />
+        <Image className={styles.komposisi} src={komposisi2} alt='link' />
           <h6 className='header2C hidden'>L-Glutathione</h6>
           <p className='paragrafC hidden'>Glutathione penting bagi kesehatan, diantaranya mencegah kerusakan sel tubuh, memperbaiki sel dan jaringan tubuh yang rusak, serta menunjang sistem kekebalan tubuh.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className={styles.komposisi} src={komposisi1} width={200} height={200} alt='link' />
+        <Image className={styles.komposisi} src={komposisi1} alt='link' />
           <h5 className='header2C hidden'>Bifidobacterium Longum</h5>
           <p className='paragrafC hidden'>Bifidobacterium longum yang kebal antibiotik dapat membantu mengobati penyakit radiasi. Dapat mencegah pertumbuhan bakteri berbahaya yang menyebabkan infeksi dan menetralkan racun di usus.</p>
         </div>
@@ -164,7 +171,7 @@ const Home = () => {
     </div> 
 
     <div className='containerLink'>
-      <p className='OrderText'>&ldquo; Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu! &rdquo; </p>
+      <p className='OrderText'>"Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!"</p>
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
           <Image className={styles.imgLink} src={shopee} width={200} height={200} alt="link" />
