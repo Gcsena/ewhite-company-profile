@@ -1,0 +1,289 @@
+.imgA {
+    width: 100%;
+    height: 100%;
+    left: 3em;
+    position: relative;
+    display: flex;
+}
+
+
+@media (max-width: 650px) {
+.imgA {
+    width: 90%;
+    height: 90%;
+    bottom: 26em;
+    left: -1em !important;
+    position: relative;
+    display: flex;
+}
+}
+
+
+@media (max-width: 550px) {
+    .imgA {
+		width: 90%;
+		height: 90%;
+		bottom: 25em;
+		left: -1em !important;
+		position: relative;
+		display: flex;
+	}
+}
+
+@media (max-width: 450px) {
+	.imgA {
+		width: 100%;
+		height: 100%;
+		bottom: 25em;
+		left: -1em !important;
+		position: relative;
+		display: flex;
+	}
+}
+
+@media (max-width: 350px) {
+    .imgA {
+        width: 95%;
+        height: 95%;
+        bottom: 26em;
+        left: -1em !important;
+    
+    }
+}
+
+
+
+.imgB {
+	width: 35em;
+	height: 35em;
+	position: relative;
+	display: flex;
+	right: 5em;
+	bottom: 7em;
+
+}
+
+@media (max-width: 650px) {
+    .imgB {
+        width: 25em;
+        height: 25em;
+        position: relative;
+        display: flex;
+        right: 2em;
+    }
+}
+
+
+@media (max-width: 550px) {
+	.imgB {
+		width: 25em;
+		height: 25em;
+		position: relative;
+		display: flex;
+		right: 4em;
+	}
+}
+
+@media (max-width: 450px) {
+	.imgB {
+		width: 20em;
+		height: 20em;
+		position: relative;
+		display: flex;
+		right: 6em;
+	}
+}
+
+@media (max-width: 350px) {
+    .imgB {
+        width: 18em;
+        height: 13em;
+        position: relative;
+        display: flex;
+        right: 6em;
+        top: -7em;
+        margin-bottom: 1em;
+        
+    }
+}
+
+.Halal {
+	width: 0.1em; 
+	height: 6em; 
+	bottom: 2em ;
+	background-color: #FF8298;
+	padding: 1em;
+	position: relative; 
+	display: flex;
+	border: none !important;
+
+}
+
+@media (max-width: 450px) and (min-width: 377px) {
+    .Halal { 
+        bottom: -2em ;
+    }
+    }
+
+
+.imgC {
+	display: flex;
+	position: relative;
+	width: 25em;
+	height: 24em;
+	left: 7.5em;
+	top: 4em;
+	}
+
+
+@media (max-width: 650px) {
+	.imgC {
+		width: 18em;
+		height: 18em;
+		left: 4em;
+		top: -13em;
+		margin-top: 1em;
+		}
+}
+
+@media (max-width: 550px) {
+	.imgC {
+		width: 17em;
+		height: 17em;
+		left: 5em;
+		top: -17em;
+		margin-top: 1em;
+		}
+}
+@media (max-width: 450px) {
+	.imgC {
+		width: 15em;
+		height: 15em;
+		left: 1em;
+		top: -20.2em;
+		margin-top: 1em;
+		}
+}
+
+	/* iphone 6 */
+	@media (max-height: 600px)  and (max-width: 450px){
+		.imgC {
+			top: -20em;
+		}
+	}
+
+
+@media (max-width: 350px) {
+    .imgC {
+        width: 15em;
+        height: 15em;
+        left: 1em;
+        top: -24em;
+        
+        }
+}
+
+/* fathan */
+.komposisi {
+    display: flex;
+    position: relative;
+}
+
+
+.model4 {
+    position: relative;
+    display: flex;
+    width: 590px;
+    height: 550px;
+    top: 0;
+    left: 16px;
+}
+@media (max-width: 650px) {
+	.model4 {
+		width: 100%;
+		height: 100%;
+		top: 88px;
+		left: -0.3px;
+		}
+    }
+
+
+
+@media (max-width: 550px) {
+	.model4 {
+		width: 100%;
+		height: 100%;
+		top: 88px;
+		left: -0.3px;
+		}
+}
+@media (max-width: 450px) {
+	.model4 {
+		width: 100%;
+		height: 100%;
+		top: 88px;
+		left: -0.3px;
+	}
+}
+
+
+.imgLink {
+	position: relative;
+	display: flex;
+	width: 50%;
+	height: 50%;
+	justify-content: center;
+	align-items: center;
+	left: 3em;
+}
+
+@media (max-width: 650px) {
+	.imgLink {
+		width: 50%;
+		height: 50%;
+		justify-content: center;
+		align-items: center;
+		left: 4em;
+	}
+}
+
+@media (max-width: 550px) {
+	.imgLink {
+		width: 50%;
+		height: 50%;
+		justify-content: center;
+		align-items: center;
+		left: 3em;
+	}
+}
+
+@media (max-width: 450px) {
+	.imgLink {
+		width: 50%;
+		height: 50%;
+		justify-content: center;
+		align-items: center;
+		left: 3.5em;
+	}
+}
+
+@media (max-width: 400px) {
+	.imgLink {
+		width: 50%;
+		height: 50%;
+		justify-content: center;
+		align-items: center;
+		/* left: 3em; */
+	}
+}
+
+@media (max-width: 350px) {
+
+	.imgLink {
+		width: 50%;
+		height: 50%;
+		justify-content: center;
+		align-items: center;
+		left: 2.3em;
+	}
+}

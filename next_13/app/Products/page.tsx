@@ -68,8 +68,8 @@ useEffect(() => {
     src='/images/produkHand.jpg'
     alt="White & Ageless From Inside"
     quality={100}
-    width={undefined}
-    height={undefined}
+    width={200}
+    height={200}
     
   />
         <h2 className="section-title on-dark">

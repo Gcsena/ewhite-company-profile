@@ -15,8 +15,6 @@ import {
   Modal,
   Select,
 } from "antd";
-import iconSmall from "../images/Logotari.svg";
-import { useNavigate } from "react-router-dom";
 // import Registrasi from "./Registrasi";
 import { Route } from "react-router-dom";
 import { blue } from "@mui/material/colors";
@@ -61,7 +59,6 @@ export default function LoginNew() {
     console.log("Clicked cancel button");
     setOpen(false);
   };
-  const navigate = useNavigate();
   const [username, setusername] = useState("");
   const [password, setpassword] = useState("");
   const [authenticated, setauthenticated] = useState(

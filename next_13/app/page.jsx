@@ -4,6 +4,21 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import styles from '../app/globals.module.css'
+
+import model2 from '/public/images/model2.png'
+import produk from '/public/images/produk.png'
+
+import komposisi1 from '/public/images/komposisi1.svg'
+import komposisi2 from '/public/images/komposisi2.svg'
+import komposisi3 from '/public/images/komposisi3.svg'
+import model4 from '/public/images/model/model4.png'
+import modelWomenEye from '../public/images/modelWomenEye.png'
+import shopee from '../public/images/shopee.svg'
+import tokped from '../public/images/tokped.svg'
+import whatsapp from '../public/images/whatsapp.svg'
+import tiktok from '../public/images/tiktok.svg'
+
 
 
 // import  Accordion  from '../components/accordion.jsx';
@@ -49,7 +64,7 @@ const Home = () => {
        </Link>
       </div>
       <div className="col-xl-6 col-lg-6">
-        <Image className='imgA' src='/images/model2.png' width={200} height={200} alt="Avatar" />
+        <Image className={styles.imgA} src={model2} alt="Avatar" />
          {/* <CarouselHome />  */}
       </div>
       </div>
@@ -59,7 +74,7 @@ const Home = () => {
   <div className='containerB' style={{padding: '0 7em 5em 7em', position: 'relative', display: 'flex'}}>
     <div className="row">
       <div className="col-xl-4">
-         <Image className="imgB" src="/images/produk.png" width={200} height={200} alt="Avatar" /> 
+       <Image   className={styles.imgB} src={produk} width={490} height={500} alt="Avatar" /> 
       </div>
       <div className="textwrapB col-xl-5">
    
@@ -88,12 +103,22 @@ const Home = () => {
 
   <div className='containerC'>
   <div className='row'>
-    <Image className='col Halal' src='/images/halal1.svg' width={200} height={200} alt="halal" />
-    <Image className='col Halal' src='/images/halal2.svg' width={200} height={200} alt="halal" />
-    <Image className='col Halal' src='/images/halal3.svg' width={200} height={200} alt="halal" />
-    <Image className='col Halal' src='/images/ha.svg' width={200} height={200} alt="halal" />
-    <Image className='col Halal' src='/images/halal5.svg' width={200} height={200} alt="halal" />
+  <div className='col'>
+  <Image className={styles.halal} src='/images/halal1.svg' width={200} height={200} alt="halal" />
   </div>
+  <div className='col'>
+  <Image className={styles.halal} src='/images/halal2.svg' width={200} height={200} alt="halal" />
+  </div>
+  <div className='col'>
+  <Image className={styles.halal} src='/images/halal3.svg' width={200} height={200} alt="halal" />
+  </div>
+  <div className='col'>
+  <Image className={styles.halal} src='/images/ha.svg' width={200} height={200} alt="halal" />
+  </div>
+  <div className='col'>
+  <Image className={styles.halal} src='/images/halal5.svg' width={200} height={200} alt="halal" />
+  </div>
+    </div>
   </div>
    <div className='containerApaYang'>
     <div className="row">
@@ -103,23 +128,23 @@ const Home = () => {
         <p className='apayangP hidden'>Banyak penelitian yang membuktikan bahwa kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput. Kolagen juga berperan penting dalam proses penyembuhan luka,selain mengandung kolagen DREWHITE juga mengandung L-Glutathione dan Bifidobacterium Longum yang memiliki banyak manfaat.</p>
       </div>
       <div className="col-6">
-      <Image className="imgC" src='/images/modelWomenEye.png' width={200} height={200}  alt="Avatar" />
+      <Image className={styles.imgC} src={modelWomenEye} width={200} height={200}  alt="Avatar" />
       </div>
       </div>
       
       <div className="row kolagen">
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className='komposisi' src='/images/komposisi3.svg' width={200} height={200} alt='link' />
+        <Image className={styles.komposisi} src={komposisi3} width={200} height={200} alt='link' />
           <h6 className='header2C hidden'>Collagen Tripeptide </h6>
           <p className='paragrafC hidden'>Kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className='komposisi' src='/images/komposisi2.svg' width={200} height={200} alt='link' />
+        <Image className={styles.komposisi} src={komposisi2} width={200} height={200} alt='link' />
           <h6 className='header2C hidden'>L-Glutathione</h6>
           <p className='paragrafC hidden'>Glutathione penting bagi kesehatan, diantaranya mencegah kerusakan sel tubuh, memperbaiki sel dan jaringan tubuh yang rusak, serta menunjang sistem kekebalan tubuh.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className='komposisi' src='/images/komposisi1.svg' width={200} height={200} alt='link' />
+        <Image className={styles.komposisi} src={komposisi1} width={200} height={200} alt='link' />
           <h5 className='header2C hidden'>Bifidobacterium Longum</h5>
           <p className='paragrafC hidden'>Bifidobacterium longum yang kebal antibiotik dapat membantu mengobati penyakit radiasi. Dapat mencegah pertumbuhan bakteri berbahaya yang menyebabkan infeksi dan menetralkan racun di usus.</p>
         </div>
@@ -129,7 +154,7 @@ const Home = () => {
   <div className='containerE'>
     <div className='row' >
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-        <Image className='model4' src='/images/model/model4.png' width={200} height={200} alt="Avatar" /> 
+        <Image className={styles.model4} src={model4} width={200} height={200} alt="Avatar" /> 
         </div>  
         <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
         <h2 className='headerE'>FREQUENTLY ASKED QUESTIONS</h2>
@@ -142,19 +167,19 @@ const Home = () => {
       <p className='OrderText'>"Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!"</p>
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
-          <Image className='imgLink' src='../images/shopee.svg' width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={shopee} width={200} height={200} alt="link" />
           <Link href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />SHOPEE</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className='imgLink' src='../images/tokped.svg' width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={tokped} width={200} height={200} alt="link" />
           <Link href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TOKOPEDIA</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className='imgLink' src='../images/whatsapp.svg' width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={whatsapp} width={200} height={200} alt="link" />
           <Link href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />WHATSAPP</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className='imgLink' src='../images/tiktok.svg' width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={tiktok} width={200} height={200} alt="link" />
           <Link href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TIKTOK</button></Link>
         </div>
       </div>

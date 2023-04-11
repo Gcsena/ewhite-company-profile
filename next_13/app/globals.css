@@ -326,15 +326,7 @@ main .pg-header h1 {
 
 }
 
-.imgB {
-	width: 35em;
-	height: 35em;
-	position: relative;
-	display: flex;
-	right: 5em;
-	bottom: 7em;
 
-}
 .textwrapB {
 	left: 15em;
 	position: relative; 
@@ -405,14 +397,7 @@ main .pg-header h1 {
 	line-height: 32px;
 	color: #292929;
 	}
-.imgC {
-	display: flex;
-	position: relative;
-	width: 25em;
-	height: 24em;
-	left: 7.5em;
-	top: 4em;
-	}
+
 
 .kolagen {
 	display: flex;
@@ -425,14 +410,7 @@ main .pg-header h1 {
 	background-color: #FF8298;
 	padding: 4em 4em 0em 4em;
 }
-.model4 {
-	position: relative;
-	display: flex;
-	width: 590px;
-	height: 550px;
-	top: 0;
-	left: 16px;
-}
+
 
 .headerE {
 	position: relative;
@@ -451,13 +429,7 @@ main .pg-header h1 {
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.imgA {
-    width: 100%;
-    height: 100%;
-    left: -3em;
-    position: relative;
-    display: flex;
-}
+
 
 @media (max-width: 650px) {
 	
@@ -484,29 +456,10 @@ main .pg-header h1 {
 
 			
 	}
-	.imgA {
-		width: 90%;
-		height: 90%;
-		bottom: 26em;
-		left: -1em !important;
-		position: relative;
-		display: flex;
-	}
 
-	.imgB {
-		width: 25em;
-		height: 25em;
-		position: relative;
-		display: flex;
-		right: 2em;
-	}
-	.imgC {
-		width: 18em;
-		height: 18em;
-		left: 4em;
-		top: -13em;
-		margin-top: 1em;
-		}
+
+
+
 
 	.textwrapB {
 		bottom: 9em;
@@ -540,12 +493,7 @@ main .pg-header h1 {
 		font-size: 18px;
 		margin: 1em;
 		}
-	.model4 {
-		width: 100%;
-		height: 100%;
-		top: 88px;
-		left: -0.3px;
-		}
+
 
 	.kolagen {
 		display: flex;
@@ -592,29 +540,10 @@ main .pg-header h1 {
 		
 		
 	}
-	.imgA {
-		width: 90%;
-		height: 90%;
-		bottom: 25em;
-		left: -1em !important;
-		position: relative;
-		display: flex;
-	}
 
-	.imgB {
-		width: 25em;
-		height: 25em;
-		position: relative;
-		display: flex;
-		right: 4em;
-	}
-	.imgC {
-		width: 17em;
-		height: 17em;
-		left: 5em;
-		top: -17em;
-		margin-top: 1em;
-		}
+
+
+
 
 	.textwrapB {
 		bottom: 9em;
@@ -647,12 +576,7 @@ main .pg-header h1 {
 		font-size: 18px;
 		margin: 1em;
 		}
-	.model4 {
-		width: 100%;
-		height: 100%;
-		top: 88px;
-		left: -0.3px;
-		}
+
 	.containerE {
 		padding-bottom: 1em;
 	}
@@ -691,30 +615,9 @@ main .pg-header h1 {
 		
 		
 	}
-	.imgA {
-		width: 100%;
-		height: 100%;
-		bottom: 25em;
-		left: -1em !important;
-		position: relative;
-		display: flex;
-	}
-	.imgB {
-		width: 20em;
-		height: 20em;
-		position: relative;
-		display: flex;
-		right: 6em;
-		
 
-	}
-	.imgC {
-		width: 15em;
-		height: 15em;
-		left: 1em;
-		top: -20.2em;
-		margin-top: 1em;
-		}
+
+
 	.textwrapB {
 		bottom: 10em;
 		left: auto;
@@ -756,12 +659,7 @@ main .pg-header h1 {
 		
 		padding: 0;
 		}
-	.model4 {
-		width: 100%;
-		height: 100%;
-		top: 88px;
-		left: -0.3px;
-	}
+
 	.headerE {
 		width: 802px;
 		height: 80px; 
@@ -778,12 +676,6 @@ main .pg-header h1 {
 		}
 	}
 
-	/* iphone 6 */
-	@media (max-height: 600px)  and (max-width: 450px){
-		.imgC {
-			top: -20em;
-		}
-	}
 
 
 	@media (max-width: 350px) {
@@ -812,30 +704,9 @@ main .pg-header h1 {
 		
 				
 			}
-			.imgA {
-				width: 95%;
-				height: 95%;
-				bottom: 26em;
-				left: -1em !important;
-			
-			}
-			.imgB {
-				width: 18em;
-				height: 13em;
-				position: relative;
-				display: flex;
-				right: 6em;
-				top: -7em;
-				margin-bottom: 1em;
-				
-			}
-			.imgC {
-				width: 15em;
-				height: 15em;
-				left: 1em;
-				top: -24em;
-				
-				}
+
+
+
 			.textwrapB {
 				bottom: 10em;
 				left: auto;
@@ -870,31 +741,6 @@ main .pg-header h1 {
 				}
 				}
 		
-
-
-
-
-
-.Halal {
-	width: 0.1em; 
-	height: 6em; 
-	bottom: 2em ;
-	background-color: #FF8298;
-	padding: 1em;
-	position: relative; 
-	display: flex;
-	border: none !important;
-
-}
-
-@media (max-width: 450px) and (min-width: 377px) {
-.Halal { 
-	bottom: -2em ;
-}
-}
-
-
-
 
 .headerC {
 /* em causing bug  */
@@ -938,11 +784,7 @@ color: #292929;
 
 
 
-/* fathan */
-.komposisi {
-    display: flex;
-    position: relative;
-}
+
 
 .paragrafD {
 display: flex;
@@ -1147,15 +989,7 @@ main .redbtnB {
 	transition-delay: 600ms;
 }
 
-.imgLink {
-	position: relative;
-	display: flex;
-	width: 50%;
-	height: 50%;
-	justify-content: center;
-	align-items: center;
-	left: 3em;
-}
+
 
 .btnLink {
 	position: relative;
@@ -1195,13 +1029,7 @@ main .redbtnB {
 
 	}
 
-	.imgLink {
-		width: 50%;
-		height: 50%;
-		justify-content: center;
-		align-items: center;
-		left: 4em;
-	}
+
 
 	.btnLink {
 		font-size: 14px;
@@ -1234,13 +1062,7 @@ main .redbtnB {
 
 	}
 
-	.imgLink {
-		width: 50%;
-		height: 50%;
-		justify-content: center;
-		align-items: center;
-		left: 3em;
-	}
+
 
 	.btnLink {
 		font-size: 14px;
@@ -1275,13 +1097,7 @@ main .redbtnB {
 	.linkWrapper {
 		left: 3em;
 	}
-	.imgLink {
-		width: 50%;
-		height: 50%;
-		justify-content: center;
-		align-items: center;
-		left: 3.5em;
-	}
+
 	.btnLink {
 		font-size: 12px;
 		align-items: center;
@@ -1312,13 +1128,7 @@ main .redbtnB {
 	.linkWrapper {
 		left: 2em;
 	}
-	.imgLink {
-		width: 50%;
-		height: 50%;
-		justify-content: center;
-		align-items: center;
-		/* left: 3em; */
-	}
+
 	.btnLink {
 		font-size: 10px;
 		align-items: center;
@@ -1348,13 +1158,7 @@ main .redbtnB {
 
 	}
 
-	.imgLink {
-		width: 50%;
-		height: 50%;
-		justify-content: center;
-		align-items: center;
-		left: 2.3em;
-	}
+
 
 	.btnLink {
 		font-size: 8px;
