@@ -7,6 +7,7 @@ import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styles from '../app/styles/image.module.css'
 
+// import * as fbq from '../lib/fpixel'
 // import './image.module.css'
 
 import model2 from '../public/images/model2.png'
@@ -40,6 +41,8 @@ import Popup from './components/Popup.jsx';
 // for scrolldown animation
 const Home = () => {
   useEffect(() => {
+    // fbq.pageView()
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         console.log(entry);
@@ -60,8 +63,7 @@ const Home = () => {
     return (
     <main> 
       <Head>
-        <title>DR EWHITE</title>
-        {/* Include Facebook Pixel code snippet here */}
+        <title>DrEWHITE, collagen terbaru berkhasiat terbaik hadir di Indonesia</title>
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -73,14 +75,13 @@ const Home = () => {
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '{133758952979039}');
-              fbq('track', 'PageView');
+              fbq('init', '133758952979039');
             `
           }}
         />
-        <meta name="description" content="Selamat datang di website dr Ewhite" />
-        <meta property="og:title" content="dr Ewhite" />
-        <meta property="og:description" content="Selamat datang di website dr Ewhite" />
+        <meta name="description" content="Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar" />
+        <meta property="og:title" content="DrEWHITE, collagen terbaru berkhasiat terbaik hadir di Indonesia" />
+        <meta property="og:description" content="Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar" />
         <meta property="og:url" content="https://drewhite.com/landingdev" />
         <meta property="og:type" content="website" />
       </Head>
