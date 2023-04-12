@@ -1,6 +1,7 @@
 "use client"; //make this page become client component,so we can use the hooks
 
 import Image from 'next/image';
+import Head from 'next/head';
 import { useEffect } from 'react';
 import Link from 'next/link';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -58,6 +59,15 @@ const Home = () => {
   
     return (
     <main> 
+      <Head>
+        <title>DR EWHITE</title>
+        <meta name="description" content="Selamat datang di website dr Ewhite" />
+        <meta property="og:title" content="dr Ewhite" />
+        <meta property="og:description" content="Selamat datang di website dr Ewhite" />
+        <meta property="og:url" content="https://drewhite.com/landingdev" />
+        <meta property="og:type" content="website" />
+      </Head>
+
   <Popup />    
 
   <div className='containerA' style={{paddingBottom: '10em', position: 'relative', display: 'flex'}}>
