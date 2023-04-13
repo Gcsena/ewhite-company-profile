@@ -2,11 +2,12 @@
 
 import { useState, useEffect} from 'react';
 import Image from 'next/image';
+import Head from 'next/head';
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
 import styles from '../../app/styles/image.module.css'
 
-
+import { NextSeo } from 'next-seo';
 
 import ControlledCarousel from '../components/carousel';
 import { Accordion2 } from '../components/Accordion.jsx';
@@ -84,7 +85,12 @@ useEffect(() => {
 
   return (
     <main>
-      
+      <NextSeo
+            title='DrEWHITE, siapakah kami?'
+            description='Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar'
+            canonical="https://drewhite.com/landingdev"
+        />
+
       <div className={styles.outerContainer}>
     <div className="image-container">
       <h2 className={`on-dark${styles.sectionTitle}`}>

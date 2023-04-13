@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { useEffect } from 'react';
 import Link from 'next/link';
 
+import { NextSeo } from 'next-seo';
+
 import styles from '../app/styles/image.module.css'
 import { Accordion } from 'app/components/Accordion.jsx';
 // import './image.module.css'
@@ -58,6 +60,11 @@ const Home = () => {
   
     return (
     <main> 
+      <NextSeo
+            title='DrEWHITE, collagen terbaru berkhasiat terbaik hadir di Indonesia'
+            description='Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar'
+            canonical="https://drewhite.com/landingdev"
+        />
   <Popup />
     
 
