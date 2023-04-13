@@ -1,6 +1,7 @@
 // MODULE
 import Link from 'next/link.js';
 
+
 // COMPONENT
 import  Footer  from '../app/components/Footer.jsx';
 import  Header  from '../app/components/Header.jsx';

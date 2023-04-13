@@ -79,7 +79,7 @@ const Home = () => {
        </Link>
       </div>
       <div className="col-xl-6 col-lg-6">
-        <Image className={styles.imgA} src={model2} alt="Avatar" />
+        <Image className={styles.imgA} src={model2} alt="Avatar"  />
          {/* <CarouselHome />  */}
       </div>
       </div>
@@ -149,17 +149,17 @@ const Home = () => {
       
       <div className="row kolagen">
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className={styles.komposisi} src={komposisi3} alt='link' />
+        <Image className={styles.komposisi} src={komposisi3} alt='link'/>
           <h6 className='header2C hidden'>Collagen Tripeptide </h6>
           <p className='paragrafC hidden'>Kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className={styles.komposisi} src={komposisi2} alt='link' />
+        <Image className={styles.komposisi} src={komposisi2} alt='link'/>
           <h6 className='header2C hidden'>L-Glutathione</h6>
           <p className='paragrafC hidden'>Glutathione penting bagi kesehatan, diantaranya mencegah kerusakan sel tubuh, memperbaiki sel dan jaringan tubuh yang rusak, serta menunjang sistem kekebalan tubuh.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
-        <Image className={styles.komposisi} src={komposisi1} alt='link' />
+        <Image className={styles.komposisi} src={komposisi1} alt='link'/>
           <h5 className='header2C hidden'>Bifidobacterium Longum</h5>
           <p className='paragrafC hidden'>Bifidobacterium longum yang kebal antibiotik dapat membantu mengobati penyakit radiasi. Dapat mencegah pertumbuhan bakteri berbahaya yang menyebabkan infeksi dan menetralkan racun di usus.</p>
         </div>
@@ -182,19 +182,19 @@ const Home = () => {
       <p className='OrderText'>&ldquo;Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!&rdquo;</p>
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
-          <Image className={styles.imgLink} src={shopee} alt="link" />
+          <Image className={styles.imgLink} src={shopee} alt="link"/>
           <Link href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />SHOPEE</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className={styles.imgLink} src={tokped} alt="link" />
+          <Image className={styles.imgLink} src={tokped} alt="link"/>
           <Link href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TOKOPEDIA</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className={styles.imgLink} src={whatsapp} alt="link" />
+          <Image className={styles.imgLink} src={whatsapp} alt="link"/>
           <Link href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />WHATSAPP</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className={styles.imgLink} src={tiktok} alt="link" />
+          <Image className={styles.imgLink} src={tiktok} alt="link"/>
           <Link href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TIKTOK</button></Link>
         </div>
       </div>
