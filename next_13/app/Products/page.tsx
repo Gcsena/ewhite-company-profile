@@ -91,7 +91,7 @@ useEffect(() => {
             canonical="https://drewhite.com/landingdev"
         />
 
-      <div className={styles.outerContainer}>
+      {/* <div className={styles.outerContainer}>
     <div className="image-container">
       <h2 className={`on-dark${styles.sectionTitle}`}>
         <span className="paralax-title">White & Ageless From Inside</span>
@@ -102,7 +102,7 @@ useEffect(() => {
         White & Ageless From Inside
       </span>
     </h2>
-  </div>
+  </div> */}
 
       <div className='containerProdukA'>
     <div className="row">
@@ -124,14 +124,14 @@ DREWHITE bermanfaat untuk : <br /> <br /> </p>
   <li className='hidden'>membantu mengencangkan kulit</li>
 </ul>
 </div>  
-        <Link href="/products" rel="noopener noreferrer">
+        <Link href="/products" rel="noopener noreferrer" style={{ textDecoration: 'none'}}>
           <ScrollLink to="ingredient" smooth={true} duration={500}><button className='redbtn btnAnimate hidden'>READ MORE</button></ScrollLink>
         </Link>
       </div>
     </div>
   </div>
       <div className='containerHow'>
-        <h1 className='HowToTxt'>HOW TO DRINK</h1>
+        <h1 className={styles.HowToTxt}>HOW TO DRINK</h1>
         <Image className={styles.HowTo} src={group9} alt="Avatar" />
       </div>
     <div className='container'>

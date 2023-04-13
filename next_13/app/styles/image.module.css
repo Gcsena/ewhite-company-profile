@@ -1,4 +1,20 @@
+.HowToTxt {
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	top: 10%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-family: var(--font-playfair);
+	font-style: normal;
+	font-weight: 700;
+	font-size: 3em;
+	color: #fff;
+	text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
 
+}
 
 /* HEADER ////////////////////////////////////////////////////////////// */
 

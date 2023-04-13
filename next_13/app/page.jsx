@@ -74,8 +74,8 @@ const Home = () => {
         <h1 className='headerA hidden' style={{color:'#DA2A52'}}> Nikmati Rasa Manis<br />Raspberry</h1>
          <h1 className='headerA hidden' style={{color:'#32A642'}}>DREWHITE</h1> 
           <p className='paragrafA hidden'>Perkenalkan minuman kolagen rasa raspberry terbaru dari kami!<br />Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi <br />dan rasa buah yang segar dalam setiap tegukan dapat menutrisi tubuh<br /> dan memanjakan kulit anda yang segar dalam setiap tegukan dapat<br /> menutrisi tubuh dan memanjakan kulit anda.</p>
-        <Link href='products' rel="noopener noreferrer">
-        <button className='redbtnC btnAnimate hidden' >LEARN MORE</button>
+        <Link href='products' rel="noopener noreferrer" style={{ textDecoration: 'none'}}>
+        <button className='redbtnC btnAnimate ' >LEARN MORE</button>
        </Link>
       </div>
       <div className="col-xl-6 col-lg-6">
@@ -109,8 +109,8 @@ const Home = () => {
         <p className='paragrafB hidden'>DREWHITE adalah minuman serbuk untuk kesehatan dan kecantikan.DREWHITE terbuat dari perpaduan bahan-bahan berkualitas yang memiliki banyak khasiat.</p>
         <h6 className='paragrafB hidden'style={{fontFamily: 'var(--font-playfair)', fontSize: '22px'}}>Ingredients</h6>  
         <p className='paragrafB hidden'>Ekstrak Buah Beri Merah (Blueberry, Blackberry, Raspberry), Collagen Tripeptide, Red Beet, Inulin, L-Glutathione, Asorbic Acid (Vitamin C),Lycopene, Grapeseed, Vitamin A&E (Retinol), Vitamin B3 (Niacin)</p>
-        <Link href="products" rel="noopener noreferrer">
-        <button className='redbtn hidden'>DETAIL PRODUCT</button>
+        <Link href="products" rel="noopener noreferrer" style={{ textDecoration: 'none'}}>
+        <button className='redbtn hidden'> DETAIL PRODUCT</button>
         </Link>
         </div>
       </div>
@@ -183,19 +183,19 @@ const Home = () => {
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
           <Image className={styles.imgLink} src={shopee} alt="link"/>
-          <Link href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />SHOPEE</button></Link>
+          <Link href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}><button className='btnLink btnAnimate'>ORDER VIA<br />SHOPEE</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
           <Image className={styles.imgLink} src={tokped} alt="link"/>
-          <Link href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TOKOPEDIA</button></Link>
+          <Link href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}><button className='btnLink btnAnimate'>ORDER VIA<br />TOKOPEDIA</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
           <Image className={styles.imgLink} src={whatsapp} alt="link"/>
-          <Link href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />WHATSAPP</button></Link>
+          <Link href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}><button className='btnLink btnAnimate'>ORDER VIA<br />WHATSAPP</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
           <Image className={styles.imgLink} src={tiktok} alt="link"/>
-          <Link href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TIKTOK</button></Link>
+          <Link href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none'}}><button className='btnLink btnAnimate'>ORDER VIA<br />TIKTOK</button></Link>
         </div>
       </div>
     </div>
