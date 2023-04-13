@@ -4,18 +4,21 @@
 import { useEffect } from 'react';
 import React, { useState } from 'react';
 import Image from 'next/image';
+import styles from '../../app/styles/image.module.css'
+
+
 import Carousel from 'react-bootstrap/Carousel';
-// import ekles1 from '../images/ekles1.jpg'
-// import ekles3 from '../images/ekles3.jpg'
-// import coa from '../images/coa.jpg'
-// import sisilia from '../images/sisilia.jpg'
-// import wulandari from '../images/wulandari.jpg'
-// import rosmayanti from '../images/rosmayanti.jpg'
-// import samantha from '../images/samantha.jpg'
-// import erina from '../images/erina.jpg'
-// import andisaminah from '../images/andisaminah.png'
-// import delya from '../images/delya.png'
-// import coamix from '../images/coamix.png'
+import ekles1 from '/public/images/ekles1.jpg'
+import ekles3 from '/public/images/ekles3.jpg'
+import coa from '/public/images/coa.jpg'
+import sisilia from '/public/images/sisilia.jpg'
+import wulandari from '/public/images/wulandari.jpg'
+import rosmayanti from '/public/images/rosmayanti.jpg'
+import samantha from '/public/images/samantha.jpg'
+import erina from '/public/images/erina.jpg'
+import andisaminah from '/public/images/andisaminah.png'
+import delya from '/public/images/delya.png'
+import coamix from '/public/images/coamix.png'
 
 
 
@@ -55,36 +58,42 @@ const About = () => {
       <div className='carouselAbout'>  
       <Carousel activeIndex={index} onSelect={handleSelect} interval={4000}>
       <Carousel.Item className='gradient'>
+        <div className='d-block w-100'>
         <Image
-          className="d-block w-100 carouselImg"
-          src='/images/coamix.png'
+          className={styles.carouselImg}
+          src={coamix}
           alt="First slide"
-          width={200} height={200}
+          
         />
+        </div>
         <Carousel.Caption>
            <h3 className='carouselCaption'>ABOUT US</h3>
           <p className='carouselP'>SIAPAKAH DIBALIK DR.EWHITE?</p> 
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='gradient'>
+        <div className='d-block w-100'>
         <Image
-          className="d-block w-100 carouselImg"
-          src='/images/coa.jpg'
-          width={200} height={200}
+          className={styles.carouselImg}
+          src={coa}
+          
           alt="Second slide"
         />
+        </div>
         <Carousel.Caption>
            <h3 className='carouselCaption'>ABOUT US</h3>
           <p className='carouselP'>SIAPAKAH DIBALIK DR.EWHITE?</p> 
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='gradient'>
+      <div className='d-block w-100'>        
         <Image
-          className="d-block w-100 carouselImg"
-          src='/images/ekles3.jpg'
+          className={styles.carouselImg}
+          src={ekles3}
           alt="Third slide"
-          width={200} height={200}
+          
         />
+        </div>
         <Carousel.Caption>
            <h3 className='carouselCaption'>ABOUT US</h3>
           <p className='carouselP'>SIAPAKAH DIBALIK DR.EWHITE?</p> 
@@ -96,7 +105,7 @@ const About = () => {
 
        <div className='row' style={{ backgroundColor: '#FFE2EB'}}>
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-        <Image className='dokterImg' src='/images/ekles1.jpg' width={200} height={200} alt= 'img'/>
+        <Image className={styles.dokterImg} src={ekles1}  alt= 'img'/>
         </div>
         <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
           <h1 className='dokterHeader hidden'>DR.EKLES</h1>
@@ -114,37 +123,37 @@ COA hanya terdiri dari 1 orang dari setiap distrik yang terpilih secara langsung
 {/* POLAROID */}
 <div className="wrapper" style={{backgroundColor: '#FFE2EB'}}>
   <div className="itemPola">
-    <div className="polaroid"><Image src='/images/sisilia.jpg' width={200} height={200} alt="img" /> 
+    <div className="polaroid"><Image src={sisilia}  alt="img" /> 
       <div className="captionPola">SISILIA<br/>CHIEF OPERATIONAL AREA BANTEN<br/>A 001 DR</div>
     </div>
   </div>
   <div className="itemPola">
-    <div className="polaroid"><Image src='/images/samantha.jpg' width={200} height={200} alt="img" />
+    <div className="polaroid"><Image src={samantha}  alt="img" />
       <div className="captionPola">SAMANTHA<br/>CHIEF OPERATIONAL AREA BOGOR<br/>F 001 DR</div>
     </div>
   </div>
   <div className="itemPola">
-    <div className="polaroid"><Image src='/images/wulandari.jpg' width={200} height={200} alt="img" />
+    <div className="polaroid"><Image src={wulandari}  alt="img" />
       <div className="captionPola">WULANDARI<br/>CHIEF OPERATIONAL AREA BANDUNG<br/>D 001 DR</div>
     </div>
   </div>
   <div className="itemPola">
-    <div className="polaroid"><Image src='/images/rosmayanti.jpg' width={200} height={200} alt="img" />
+    <div className="polaroid"><Image src={rosmayanti}  alt="img" />
       <div className="captionPola">ROSMAYANTI<br/>CHIEF OPERATIONAL AREA SURABAYA<br/>L 001 DR</div>
     </div>
   </div>
   <div className="itemPola mb-5">
-    <div className="polaroid"><Image src='/images/erina.jpg' width={200} height={200} alt="img" />
+    <div className="polaroid"><Image src={erina}  alt="img" />
       <div className="captionPola">ERINA<br/>CHIEF OPERATIONAL AREA BEKASI<br/>C 001 DR</div>
     </div>
   </div>
   <div className="itemPola mb-5">
-    <div className="polaroid"><Image src='/images/andisaminah.png' width={200} height={200} alt="img" />
+    <div className="polaroid"><Image src={andisaminah}  alt="img" />
       <div className="captionPola">SAMIHAH<br/>CHIEF OPERATIONAL AREA JAMBI<br/>BH 001 DR</div>
     </div>
   </div>
   <div className="itemPola mb-5">
-    <div className="polaroid"><Image src='/images/delya.png' width={200} height={200} alt="img" />
+    <div className="polaroid"><Image src={delya}  alt="img" />
       <div className="captionPola">DELYA<br/>CHIEF OPERATIONAL AREA SUKABUMI<br/>FA 001 DR</div>
     </div>
   </div>

@@ -1,22 +1,20 @@
 "use client"; //make this page become client component,so we can use the hooks
 
 import Image from 'next/image';
-import Head from 'next/head';
 import { useEffect } from 'react';
 import Link from 'next/link';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import styles from '../app/styles/image.module.css'
 
-// import * as fbq from '../lib/fpixel'
+import styles from '../app/styles/image.module.css'
+import { Accordion } from 'app/components/Accordion.jsx';
 // import './image.module.css'
 
-import model2 from '../public/images/model2.png'
-import produk from '../public/images/produk.png'
+import model2 from '/public/images/model2.png'
+import produk from '/public/images/produk.png'
 
-import komposisi1 from '../public/images/komposisi1.svg'
-import komposisi2 from '../public/images/komposisi2.svg'
-import komposisi3 from '../public/images/komposisi3.svg'
-import model4 from '../public/images/model/model4.png'
+import komposisi1 from '/public/images/komposisi1.svg'
+import komposisi2 from '/public/images/komposisi2.svg'
+import komposisi3 from '/public/images/komposisi3.svg'
+import model4 from '/public/images/model/model4.png'
 import modelWomenEye from '../public/images/modelWomenEye.png'
 import shopee from '../public/images/shopee.svg'
 import tokped from '../public/images/tokped.svg'
@@ -41,8 +39,6 @@ import Popup from './components/Popup.jsx';
 // for scrolldown animation
 const Home = () => {
   useEffect(() => {
-    // fbq.pageView()
-
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         console.log(entry);
@@ -62,31 +58,8 @@ const Home = () => {
   
     return (
     <main> 
-      <Head>
-        <title>DrEWHITE, collagen terbaru berkhasiat terbaik hadir di Indonesia</title>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              !function(f,b,e,v,n,t,s)
-              {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-              n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-              if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-              n.queue=[];t=b.createElement(e);t.async=!0;
-              t.src=v;s=b.getElementsByTagName(e)[0];
-              s.parentNode.insertBefore(t,s)}(window, document,'script',
-              'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '133758952979039');
-            `
-          }}
-        />
-        <meta name="description" content="Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar" />
-        <meta property="og:title" content="DrEWHITE, collagen terbaru berkhasiat terbaik hadir di Indonesia" />
-        <meta property="og:description" content="Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar" />
-        <meta property="og:url" content="https://drewhite.com/landingdev" />
-        <meta property="og:type" content="website" />
-      </Head>
-
-  <Popup />    
+  <Popup />
+    
 
   <div className='containerA' style={{paddingBottom: '10em', position: 'relative', display: 'flex'}}>
      <div className="row">  {/*col-xl-6 col-lg-6 col-md-6 col-sm-1 col-1 */}
@@ -138,23 +111,23 @@ const Home = () => {
 
   <div className='containerC'>
   <div className='row'>
-  {/* <div className='col'> */}
-  <Image className={styles.Halal} src={halal1} alt="halal" />
-  {/* </div> */}
-  {/* <div className='col'> */}
-  <Image className={styles.Halal} src={halal2} alt="halal" />
-  {/* </div> */}
-  {/* <div className='col'> */}
-  <Image className={styles.Halal} src={halal3} alt="halal" />
-  {/* </div> */}
-  {/* <div className='col'> */}
-  <Image className={styles.Halal} src={ha} alt="halal" />
-  {/* </div> */}
-  {/* <div className='col'> */}
-  <Image className={styles.Halal} src={halal5} alt="halal" />
-  {/* </div> */}
+    <div className={`col ${styles.Halal}`}>
+      <Image className={styles.HalalImg} src={halal1} alt="halal" />
+    </div>
+    <div className={`col ${styles.Halal}`}>
+      <Image className={styles.HalalImg} src={halal2} alt="halal" />
+    </div>
+    <div className={`col ${styles.Halal}`}>
+      <Image className={styles.HalalImg} src={halal3} alt="halal" />
+    </div>
+    <div className={`col ${styles.Halal}`}>
+      <Image className={styles.HalalImg} src={ha} alt="halal" />
+    </div>
+    <div className={`col ${styles.Halal}`}>
+      <Image className={styles.HalalImg} src={halal5} alt="halal" />
     </div>
   </div>
+</div>
    <div className='containerApaYang'>
     <div className="row">
       <div className="col-xl-6" >
@@ -163,7 +136,7 @@ const Home = () => {
         <p className='apayangP hidden'>Banyak penelitian yang membuktikan bahwa kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput. Kolagen juga berperan penting dalam proses penyembuhan luka,selain mengandung kolagen DREWHITE juga mengandung L-Glutathione dan Bifidobacterium Longum yang memiliki banyak manfaat.</p>
       </div>
       <div className="col-6">
-      <Image className={styles.imgC} src={modelWomenEye} width={200} height={200}  alt="Avatar" />
+      <Image className={styles.imgC} src={modelWomenEye}   alt="Avatar" />
       </div>
       </div>
       
@@ -189,32 +162,32 @@ const Home = () => {
   <div className='containerE'>
     <div className='row' >
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-        <Image className={styles.model4} src={model4} width={200} height={200} alt="Avatar" /> 
+        <Image className={styles.model4} src={model4} alt="Avatar" /> 
         </div>  
         <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
         <h2 className='headerE'>FREQUENTLY ASKED QUESTIONS</h2>
-        {/* { <Accordion /> } */}
+        { <Accordion /> }
         </div>
       </div>
     </div> 
 
     <div className='containerLink'>
-      <p className='OrderText'>&ldquo;Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!&rdquo;</p>
+      <p className='OrderText'>"Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!"</p>
       <div className='row linkWrapper'>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
-          <Image className={styles.imgLink} src={shopee} width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={shopee} alt="link" />
           <Link href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />SHOPEE</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className={styles.imgLink} src={tokped} width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={tokped} alt="link" />
           <Link href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TOKOPEDIA</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className={styles.imgLink} src={whatsapp} width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={whatsapp} alt="link" />
           <Link href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />WHATSAPP</button></Link>
         </div>
         <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <Image className={styles.imgLink} src={tiktok} width={200} height={200} alt="link" />
+          <Image className={styles.imgLink} src={tiktok} alt="link" />
           <Link href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TIKTOK</button></Link>
         </div>
       </div>

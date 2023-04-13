@@ -3,6 +3,9 @@ import React, { useEffect, useRef } from 'react';
 import $ from 'jquery';
 import Link from 'next/link';
 import Image from 'next/image';
+import styles from '../../app/styles/image.module.css'
+
+import promopuasa from '/public/images/promopuasa.png'
 
 // export const Popup = () => {
   export default function Popup () {
@@ -30,10 +33,11 @@ import Image from 'next/image';
     <div className="popup-wrap" style={{ display: 'none' }}>
       <div className="popup">
         <Link href='https://shp.ee/78mv6wi' target="_blank" rel="noopener noreferrer">
-          <Image className='promoImg' src='/images/promopuasa.png' width={200} height={200} alt="promo" />
+          <Image  className={styles.promoImg} src={promopuasa} alt="promo" />
         </Link>
         <div className="btn-close"></div>
       </div>
     </div>
   );
 };
+

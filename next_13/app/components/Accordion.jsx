@@ -148,4 +148,4 @@ Buah beri juga mengandung kalori yang cukup rendah sehingga buah ini sangat baik
 }
 
 
- export default {Accordion, Accordion2};
+ export default { Accordion, Accordion2 };

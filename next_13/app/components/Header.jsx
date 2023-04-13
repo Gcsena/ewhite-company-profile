@@ -1,43 +1,36 @@
-// import Link from 'next/link';
-// import Image from 'next/image';
-// // import { BsFillPersonFill } from 'react-icons/bs';
+import Link from 'next/link';
+import Image from 'next/image';
+import styles from '../../app/styles/image.module.css';
+// import { BsFillPersonFill } from 'react-icons/bs';
+import ewhite from '/public/images/ewhite.svg'
 
 
+const Header = () => {
+  return (
+    <header>
+<div className='container'>
+<div className="row align-items-center">
+  <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-center">
+    <Image className={styles.ewhite} src={ewhite} style={{ animation:'slide-infinite 5s infinite'}} alt="Avatar"></Image>
+  </div>
+  <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
+        <div className='d-flex justify-content-end'>
+            <Link href='/' className='nav-link'>Home</Link>
+            <Link href='About' className='nav-link'>About</Link>
+            <Link href='products' className='nav-link'>Product</Link>
+            {/* <Link href='Login' className='nav-link'>Login</Link> */}
 
-// const Header = () => {
-//   return (
-//     <header>
-// <div className='container'>
-// <div className="row align-items-center">
-//   <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12 d-flex justify-content-start">
-//     <Image className="ewhite" src='/images/ewhite.svg' alt="Avatar"></Image>
-//   </div>
-//   <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
-//         <div className='d-flex justify-content-end'>
-//         <Link href='/' 
-//           className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-//         >Home</Link>
-//         <Link href='about'
-//           className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-//         >About</Link>
-//         <Link href='products'
-//           className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-//         >Products</Link>
-//         {/* <Link href='Login' 
-//           className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
-//         ><buthrefn className='redbtn btnAnimate' style={{padding: '0.8em 1.5em', bottom: '0.4em', fontSize: '10px' }}><BsFillPersonFill className='iconPerson'/>LOGIN</button>
-//         </Link> */}
-//       </div>
-//     </div>
+        </div>
+    </div>
   
-// </div>
+</div>
 
-// </div>
-//     </header>
-//   )
-// }
+</div>
+    </header>
+  )
+}
 
-// export default Header;
+export default Header;
 
 
 

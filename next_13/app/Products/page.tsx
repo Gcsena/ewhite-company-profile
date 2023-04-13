@@ -4,10 +4,16 @@ import { useState, useEffect} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Link as ScrollLink } from 'react-scroll';
+import styles from '../../app/styles/image.module.css'
+
 
 
 import ControlledCarousel from '../components/carousel';
-// import Accordion2 from '../components/accordion.jsx';
+import { Accordion2 } from '../components/Accordion.jsx';
+
+import produkHand from '/public/images/produkHand.jpg'
+import group9 from '/public/images/group9.svg'
+import produk1 from '/public/images/produk1.jpg'
 
 
 const Products = () => {
@@ -22,12 +28,14 @@ useEffect(() => {
   const scrollInProgress = () => {
     setDidScroll(true);
   }
-
   const raf = () => {
-    if(didScroll) {
-      paralaxTitles.forEach((element, index) => {
-        element.style.transform = "translateX("+ window.scrollY / 10 + "%)"
-      })
+    if (didScroll) {
+      const imgA = document.querySelector<HTMLElement>('.imgA');
+  
+      if (imgA) {
+        imgA.style.transform = `translateX(${window.scrollY / 10}%)`;
+      }
+  
       setDidScroll(false);
     }
     requestAnimationFrame(raf);
@@ -40,6 +48,21 @@ useEffect(() => {
     window.removeEventListener('scroll', scrollInProgress);
   }
 }, [didScroll]);
+
+
+//the const raf from gpt that will keep the animate on when migrate to next img
+// const raf = () => {
+//   if (didScroll) {
+//     const imgA = document.querySelector<HTMLElement>('.imgA');
+
+//     if (imgA) {
+//       imgA.style.transform = `translateX(${window.scrollY / 10}%)`;
+//     }
+
+//     setDidScroll(false);
+//   }
+//   requestAnimationFrame(raf);
+
 
   // LOGIC FOR SCROLLDOWN ANIMATION
   useEffect(() => {
@@ -62,28 +85,18 @@ useEffect(() => {
   return (
     <main>
       
-       <div className="outer-container ">
-      <div className="image-container" style={{backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1))`}}>
-      <Image priority
-    src='/images/produkHand.jpg'
-    alt="White & Ageless From Inside"
-    quality={100}
-    width={200}
-    height={200}
-    
-  />
-        <h2 className="section-title on-dark">
-          <span className="paralax-title">
-            White & Ageless From Inside
-          </span>
-        </h2>
-      </div>
-      <h2 className="section-title">
-        <span className="paralax-title" style={{color: '#DA2A52'}}>
-        White & Ageless From Inside
-        </span>
+      <div className={styles.outerContainer}>
+    <div className="image-container">
+      <h2 className={`on-dark${styles.sectionTitle}`}>
+        <span className="paralax-title">White & Ageless From Inside</span>
       </h2>
     </div>
+    <h2 className={styles.sectionTitle}>
+      <span className="paralax-title" style={{ color: "#DA2A52" }}>
+        White & Ageless From Inside
+      </span>
+    </h2>
+  </div>
 
       <div className='containerProdukA'>
     <div className="row">
@@ -95,7 +108,7 @@ useEffect(() => {
       <div className='paragrafProdukA'>
       <p className='hidden'>Dikonsep dan diawasi langsung oleh dokter profesional, DREWHITE merupakan minuman kolagen dengan Vitamin A, Vitamin B3, Vitamin C dan Probiotic yang baik untuk kesehatan dan kecantikan. Terbuat dari 100% bahan-bahan yang berkualitas, dengan rasa raspberry yang enak dan segar, serta aman dikonsumsi setiap hari. 
 DREWHITE bermanfaat untuk : <br /> <br /> </p>
-{/* <ul>
+<ul>
   <li className='hidden'>meningkatkan elastisitas dan kelembaban kulit</li>
   <li className='hidden'>membantu mencerahkan warna kulit</li>
   <li className='hidden'>menjaga tubuh dari serangan radikal bebas</li>
@@ -103,7 +116,7 @@ DREWHITE bermanfaat untuk : <br /> <br /> </p>
   <li className='hidden'>meningkatkan imun tubuh</li>
   <li className='hidden'>membantu menghilangkan noda hitam pada kulit</li>
   <li className='hidden'>membantu mengencangkan kulit</li>
-</ul> */}
+</ul>
 </div>  
         <Link href="/products" rel="noopener noreferrer">
           <ScrollLink to="ingredient" smooth={true} duration={500}><button className='redbtn btnAnimate hidden'>READ MORE</button></ScrollLink>
@@ -113,15 +126,16 @@ DREWHITE bermanfaat untuk : <br /> <br /> </p>
   </div>
       <div className='containerHow'>
         <h1 className='HowToTxt'>HOW TO DRINK</h1>
-        <Image className='HowTo' src='/images/group9.svg' width={200} height={200} alt="Avatar" />
+        <Image className={styles.HowTo} src={group9} alt="Avatar" />
       </div>
     <div className='container'>
       <div className='row'>
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-      <Image className='ingredientImg' src='/images/produk1.jpg' width={200} height={200} alt="Avatar" />      </div> 
+      <Image className={styles.ingredientImg} src={produk1} alt="Avatar" />      
+      </div> 
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 '>
       <h1 className={`headerIngredient `} id="ingredient">INGREDIENTS</h1> 
-            {/* { <Accordion2 /> } */}
+            { <Accordion2 /> }
         </div>    
       </div>
     </div>

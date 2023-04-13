@@ -14,7 +14,11 @@
 
 }
 
+button {
+	text-decoration: none;
+  }
 
+  
 
 /* BTN EFFECT */
 
@@ -68,6 +72,29 @@
 a {
 	text-decoration: none;
 }
+
+
+/* WA BUTTON STICKY ////////////////////////////////////////////////////////////// */
+
+.whatsapp-button {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 9999;
+	background-color: #25d366;
+	color: #fff;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: transform 0.3s ease-in-out;
+  }
+  
+  .whatsapp-button:hover {
+	transform: scale(1.1);
+  }
 
 
 /* MAIN ////////////////////////////////////////////////////////////// */
@@ -139,11 +166,7 @@ main .pg-header h1 {
   }
   
 
-.promoImg {
-	width: 100%;
-	height: 100%;
 
-}
 
 @media (max-width: 650px) {
 	
@@ -1217,10 +1240,7 @@ main .redbtnB {
 
 }
 
- .carouselImg {
-	width: 100%;
-	height: 550px;
-}
+
 .carouselCaption {
 	font-family: var(--font-AbrilFat);
 	font-size: 50px;
@@ -1270,17 +1290,7 @@ main .redbtnB {
 	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
-.dokterImg {
-	position: relative;
-	display: flex;
-	width: 75%;
-	height: 75%;
-	margin: 1em;
-	border: none;
-	border-radius: 1em;
-	top: 5em;
-	left: 3em;
-}
+
 .dokterTxt {
 	position: relative;
 	/* display: flex; */ /*when add bold text pragraf broke */
@@ -1301,10 +1311,6 @@ main .redbtnB {
 		margin-top: 1em;
 	}
 
-	.carouselImg{
-		width: 100%;
-		height: 250px;
-	  }
 	  .carouselCaption{
 		font-size: 20px;
 	
@@ -1323,13 +1329,7 @@ main .redbtnB {
 		font-size: 35px;
 	}
 
-	.dokterImg {
-		width: 70%;
-		height: 70%;
-		margin: 1em;
-		top: 10em;
-		left: 4em;
-	}
+
 	.dokterTxt {
 		font-size: 16px;
 		justify-content: center;
@@ -1363,10 +1363,7 @@ main .redbtnB {
 	}
 	
 	
-	.carouselImg{
-		width: 100%;
-		height: 250px;
-	  }
+
 	  .carouselCaption{
 		font-size: 20px;
 	
@@ -1385,13 +1382,7 @@ main .redbtnB {
 		font-size: 35px;
 	}
 
-	.dokterImg {
-		width: 70%;
-		height: 70%;
-		margin: 1em;
-		top: 10em;
-		left: 3.5em;
-	}
+
 	.dokterTxt {
 		font-size: 16px;
 		justify-content: center;
@@ -1422,10 +1413,7 @@ main .redbtnB {
 		margin-top: 1em;
 	}
 
-	.carouselImg{
-		width: 100%;
-		height: 220px;
-	  }
+
 	  .carouselCaption{
 		font-size: 20px;
 	
@@ -1443,13 +1431,7 @@ main .redbtnB {
 		font-size: 35px;
 	}
 
-	.dokterImg {
-		width: 70%;
-		height: 70%;
-		margin: 1em;
-		top: 10em;
-		left: 2.5em;
-	}
+
 	.dokterTxt {
 		font-size: 15px;
 		justify-content: center;
@@ -1630,159 +1612,6 @@ main .redbtnB {
 
 /* IMG ANIMATION  */
 
-  .outer-container {
-	max-width: 500px;
-	margin: 5em auto 10em auto;
-	width: 90%;
-	padding: 0px 0px;
-	position: relative;
-  }
-  
-  .image-container {
-	padding-bottom: 100%;
-	position: relative;
-	overflow: hidden;
-	z-index: 2;
-	background-size: cover;
-	background-position: center;
-}
-  
-  .section-title {
-	margin: 0;
-	font-size: 64px;
-	width: 100%;
-	text-align: center;
-	position: absolute;
-	top: 50%;
-	left: -40%;
-	transform: translateY(-50%);
-	z-index: 1;
-	white-space: nowrap;
-  }
-  
-  .section-title.on-dark {
-	color: white;
-  }
-  
-  .section-title span {
-	position: relative;
-	display: block;
-  }
-
-
-  @media screen and (max-width: 750px) {
-	.outer-container {
-		max-width: 500px;
-		margin: 5em auto 10em auto;
-		width: 90%;
-		padding: 0px 0px;
-	  }
-	  
-	  .image-container {
-		padding-bottom: 100%;
-	}
-	  
-	  .section-title {
-		margin: 0;
-		font-size: 50px;
-		width: 100%;
-		top: 50%;
-		left: -20%;
-		transform: translateY(-50%);
-	  }
-  }
-
-
-  @media screen and (max-width: 650px) {
-	.outer-container {
-		max-width: 450px;
-		margin: 5em auto 10em auto;
-		width: 90%;
-		padding: 0px 0px;
-	  }
-	  
-	  .image-container {
-		padding-bottom: 100%;
-	}
-	  
-	  .section-title {
-		margin: 0;
-		font-size: 40px;
-		width: 100%;
-		top: 50%;
-		left: -20%;
-		transform: translateY(-50%);
-	  }
-  }
-
-  @media screen and (max-width: 550px) {
-	.outer-container {
-		max-width: 325px;
-		margin: 5em auto 10em auto;
-		width: 90%;
-		padding: 0px 0px;
-	  }
-	  
-	  .image-container {
-		padding-bottom: 100%;
-	}
-	  
-	  .section-title {
-		margin: 0;
-		font-size: 35px;
-		width: 100%;
-		top: 50%;
-		left: -20%;
-		transform: translateY(-50%);
-	  }
-  }
-
-  @media screen and (max-width: 450px) {
-	.outer-container {
-		max-width: 250px;
-		margin: 5em auto 10em auto;
-		width: 90%;
-		padding: 0px 0px;
-	  }
-	  
-	  .image-container {
-		padding-bottom: 100%;
-	}
-	  
-	  .section-title {
-		margin: 0;
-		font-size: 25px;
-		width: 100%;
-		top: 50%;
-		left: -20%;
-		transform: translateY(-50%);
-	  }
-  }
-
-
-  @media screen and (max-width: 350px) {
-	.outer-container {
-		max-width: 200px;
-		max-height: 500px;
-		margin: 5em auto 10em auto;
-		width: 90%;
-		height: 90%;
-		padding: 0px 0px;
-	  }
-	  
-	  .image-container {
-		padding-bottom: 100%;
-	}
-	  
-	  .section-title {
-		margin: 0;
-		font-size: 20px;
-		width: 100%;
-		top: 50%;
-		left: -20%;
-		transform: translateY(-50%);
-	  }
-  }
 /* IMG ANIMATION  */
 
 .banner {
@@ -1829,24 +1658,10 @@ main .redbtnB {
 .paragrafProdukA li + li {
   text-indent: -0.1em;
 }
-
-
-.carouselProduk {
-	max-width: 100%;
-	max-height: 500px; /* or any other desired value */
-  }
   
 .containerHow {
 	position: relative;
 
-}
-
-.HowTo {
-	width: 100%;
-	height: 650px;
-	bottom:2em;
-	position: relative;
-	display: flex;
 }
 
 .HowToTxt {
@@ -1867,20 +1682,6 @@ main .redbtnB {
 
 }
 
-
-
-
-/* size using px for prevent following sizze change when open carousel,but not responsive */
-.ingredientImg {
-	position: relative;
-	display: flex;
-	width: 450px;
-	height: 500px;
-	left: 3em;
-	margin-top: 4em;
-	margin-bottom: 4em;
-
-}
 
 .headerIngredient {
 	display: flex;
@@ -1932,11 +1733,7 @@ main .redbtnB {
 		margin: 3em;
 
 	}
-	.HowTo {
-		top: 1em;
-		width: 100%;
-		height: 300px;
-	}
+
 	.HowToTxt {
 		top: 25%;
 		left: 50%;
@@ -1950,20 +1747,10 @@ main .redbtnB {
 		
 		top:1em;
 }
-.ingredientImg {
-	position: relative;
-	display: flex;
-	width: 50%;
-	height: 70%;
-	left: 8em;
-	top: 3em;
-}
+
 }
 
-@media (max-width: 550px) {
-.carouselProduk {
-	padding: 2em 0 2em 0;
-}
+
 
 .HowToTxt {
 	top: 28%;
@@ -1971,7 +1758,7 @@ main .redbtnB {
 	transform: translate(-50%, -50%);
 	font-size: 21px;
 }
-}
+
 
 
 @media (max-width: 450px) {
@@ -1979,10 +1766,6 @@ main .redbtnB {
 		width: 100%;
 		height: 200px;
 		/* margin-top: 2em; */
-	}
-	.carouselProduk {
-		padding: 2em 0 2em 0;
-		
 	}
 	.textProdukA {
 		margin-top: 3em;
@@ -1994,11 +1777,7 @@ main .redbtnB {
 		margin: 3em;
 
 	}
-	.HowTo {
-		top: 1em;
-		width: 100%;
-		height: 250px;
-	}
+
 	.HowToTxt {
 		top: 30%;
 		left: 50%;
@@ -2009,17 +1788,9 @@ main .redbtnB {
 		position: relative;
 		display: flex;
 		font-size: 2em;
-		
 		top:1em;
 }
-.ingredientImg {
-	position: relative;
-	display: flex;
-	width: 50%;
-	height: 70%;
-	left: 5em;
-	top: 3em;
-}
+
 
 }
 @media (max-width: 350px) {
@@ -2057,17 +1828,6 @@ header {
 }
 
 
-
-.ewhite {
-	position: relative;
-	display: flex;
-	width: 15em;
-	height: 5em;
-	animation: slide-infinite 5s infinite;
-	/* animation: fade-in-out 10s infinite; */
-	/* animation: slide-fade 5s infinite; */
-}
-
 .iconPerson {
 	font-size: 1.2em;
 }
@@ -2078,8 +1838,7 @@ header .nav-link {
 	color: #999;
 	border-radius: 0;
 	font-size: 14px;
-
-	
+	margin: 0 15px;	
 }
 
 header .nav-link:hover {
@@ -2173,25 +1932,6 @@ header .nav-link {
 		padding: 0 1em 0 1em;
 	}	
 	}
-  @media (max-height: 812px) {
-	header .ewhite {
-		left: 2.5em;
-	}
-  }
-
-  @media (max-height: 670px) {
-	header .ewhite {
-		left: 2.4em;
-	}
-  }
-
-  @media (max-height: 570px) {
-	header .ewhite {
-		left: 3em;
-	}
-  }
-
-
 
   @media (max-width: 450px) {
 	header .row {
@@ -2214,17 +1954,8 @@ header .nav-link {
 	}
   }
 
-
 /* FOOTER ////////////////////////////////////////////////////////////// */
 
-.logoFooter {
-	width: 80px;
-	height: 80px;
-	position: relative;
-	display: flex;
-	right: 1em;
-	left: auto;
-}
 
 footer {
 	padding: 40px 0 100px 0;
@@ -2324,13 +2055,7 @@ footer .copyrights {
 
 
 @media (max-width: 850px) {
-	.logoFooter {
-		width: 3em;
-		height: 3em;
-		position: relative;
-		display: flex;
-		left: 1px;
-	}
+
 	footer .custom-icon {
 
 		font-size: 2em;		
@@ -2361,13 +2086,7 @@ footer .copyrights {
 
 
 @media (max-width: 750px) {
-	.logoFooter {
-		width: 3em;
-		height: 3em;
-		position: relative;
-		display: flex;
-		left: 1px;
-	}
+
 	footer .custom-icon {
 
 		font-size: 2em;		
@@ -2398,13 +2117,7 @@ footer .copyrights {
 
 
 @media (max-width: 650px) {
-	.logoFooter {
-		width: 3em;
-		height: 3em;
-		position: relative;
-		display: flex;
-		left: 1px;
-	}
+
 	footer .custom-icon {
 		size: 1em;
 		font-size: 1.5em;		
@@ -2435,13 +2148,7 @@ footer .copyrights {
 }
 
 @media (max-width: 450px) {
-	.logoFooter {
-		width: 3em;
-		height: 3em;
-		position: relative;
-		display: flex;
-		left: 1px;
-	}
+
 	footer .custom-icon {
 		size: 1em;
 		font-size: 1.5em;		
