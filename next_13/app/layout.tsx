@@ -7,8 +7,6 @@ import  Header  from '../app/components/Header.jsx';
 import WhatsAppButton from '../app/components/WhatsAppButton.jsx';
 
 // STYLING
-import '@fortawesome/fontawesome-free/css/all.css'
-import '@fortawesome/fontawesome-free/js/all.js'
 import './globals.css'
 import '../app/styles/image.module.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
