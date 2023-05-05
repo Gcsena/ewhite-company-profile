@@ -6,6 +6,7 @@ import Home from './pages/Home.jsx';
 import About from './pages/About.jsx';
 import Posts from './pages/Posts.jsx';
 import Products from './pages/Products.jsx';
+import Reseller from './pages/Reseller.jsx';
 import Error from './pages/Error.jsx';
 import Login from './pages/Login.jsx';
 // import Contact from './pages/Contact';
@@ -25,6 +26,7 @@ function App() {
 						<Route path='about' element={<About />} /> 
 						<Route path='products' element={<Products />} />
 						<Route path='posts' element={<Posts />} />
+						<Route path='Reseller' element={<Reseller />} />
 						{/* <Route path='Contact' element={<Contact />} />  */}
 					</Route>
 					<Route path='Login' element={<Login />} />

@@ -23,6 +23,9 @@ const Header = () => {
         <NavLink to='products'
           className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
         >Products</NavLink>
+        <NavLink to='Reseller' 
+          className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
+        >Reseller</NavLink>
         <NavLink to='Login' 
           className={(navData) => navData.isActive ? 'nav-link active' : 'nav-link'}
         ><button className='redbtn btnAnimate' style={{padding: '0.8em 1.5em', bottom: '0.4em', fontSize: '10px' }}><BsFillPersonFill className='iconPerson'/>LOGIN</button>
