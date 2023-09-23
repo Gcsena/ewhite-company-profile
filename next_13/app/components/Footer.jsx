@@ -25,9 +25,9 @@ const Footer = () => {
       <div className="col-xl-1 col-lg-1 col-md-3 col-sm-3 col-3">
         <Link href='About' className='nav-link'>About</Link>
       </div>
-      {/* <div className="col-xl-1 col-lg-1 col-md-3 col-sm-3 col-3">
-        <Link href='Login' className='nav-link'>Login</Link>
-      </div> */}
+      <div className="col-xl-1 col-lg-1 col-md-3 col-sm-3 col-3">
+        <Link href='Reseller' className='nav-link'>Reseller</Link>
+      </div>
     </div>
 
 

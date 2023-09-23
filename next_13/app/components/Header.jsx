@@ -17,8 +17,8 @@ const Header = () => {
         <div className='d-flex justify-content-end'>
             <Link href='/' className='nav-link'>Home</Link>
             <Link href='About' className='nav-link'>About</Link>
-            <Link href='products' className='nav-link'>Product</Link>
-            {/* <Link href='Login' className='nav-link'>Login</Link> */}
+            <Link href='Products' className='nav-link'>Product</Link>
+            <Link href='Reseller' className='nav-link'>Reseller</Link>
 
         </div>
     </div>
