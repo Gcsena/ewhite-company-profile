@@ -1,6 +1,6 @@
 "use client"; //make this page become client component,so we can use the hooks
 
-import { useState, useEffect} from 'react';
+import { useState, useEffect, useRef} from 'react';
 import Image from 'next/image';
 import Head from 'next/head';
 import Link from 'next/link';
@@ -19,36 +19,36 @@ import produk1 from '/public/images/produk1.jpg'
 
 const Products = () => {
 
-// LOGIC FOR FIRST IMAGE ANIMATION
+// LOGIC FOR FIRST IMAGE ANIMATION*logic not work in next, but work in react
 
-const [didScroll, setDidScroll] = useState(false);
+// const [didScroll, setDidScroll] = useState(false);
 
-useEffect(() => {
-  const paralaxTitles = document.querySelectorAll<HTMLElement>('.paralax-title');
+// useEffect(() => {
+//   const paralaxTitles = document.querySelectorAll<HTMLElement>('.paralax-title');
 
-  const scrollInProgress = () => {
-    setDidScroll(true);
-  }
-  const raf = () => {
-    if (didScroll) {
-      const imgA = document.querySelector<HTMLElement>('.imgA');
+//   const scrollInProgress = () => {
+//     setDidScroll(true);
+//   }
+//   const raf = () => {
+//     if (didScroll) {
+//       const imgA = document.querySelector<HTMLElement>('.imgA');
   
-      if (imgA) {
-        imgA.style.transform = `translateX(${window.scrollY / 10}%)`;
-      }
+//       if (imgA) {
+//         imgA.style.transform = `translateX(${window.scrollY / 10}%)`;
+//       }
   
-      setDidScroll(false);
-    }
-    requestAnimationFrame(raf);
-  }
+//       setDidScroll(false);
+//     }
+//     requestAnimationFrame(raf);
+//   }
 
-  requestAnimationFrame(raf);
-  window.addEventListener('scroll', scrollInProgress);
+//   requestAnimationFrame(raf);
+//   window.addEventListener('scroll', scrollInProgress);
 
-  return () => {
-    window.removeEventListener('scroll', scrollInProgress);
-  }
-}, [didScroll]);
+//   return () => {
+//     window.removeEventListener('scroll', scrollInProgress);
+//   }
+// }, [didScroll]);
 
 
 //the const raf from gpt that will keep the animate on when migrate to next img

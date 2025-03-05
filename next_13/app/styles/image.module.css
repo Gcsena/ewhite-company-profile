@@ -380,47 +380,33 @@
 }
 
 .dokterImg {
-	position: relative;
-	display: flex;
-	width: 75%;
-	height: 75%;
-	margin: 1em;
-	border: none;
+	width: 100%; 
+	max-width: 400px; 
+	height: auto; 
 	border-radius: 1em;
-	top: 5em;
-	left: 3em;
-}
-
-
-@media (max-width: 650px) {
+	margin-bottom: 1em; 
+	border: none;
+  }
+  
+  
+  @media (max-width: 768px) {
 	.dokterImg {
-		width: 70%;
-		height: 70%;
-		margin: 1em;
-		top: 10em;
-		left: 4em;
+	  max-width: 350px; 
 	}
-}
-
-@media (max-width: 550px) {
+  }
+  
+  @media (max-width: 576px) {
 	.dokterImg {
-		width: 70%;
-		height: 70%;
-		margin: 1em;
-		top: 10em;
-		left: 3.5em;
+	  max-width: 300px; 
 	}
-}
-
-@media (max-width: 450px) {
+  }
+  
+  @media (max-width: 375px) {
 	.dokterImg {
-		width: 70%;
-		height: 70%;
-		margin: 1em;
-		top: 10em;
-		left: 2.5em;
+	  max-width: 280px; 
 	}
-}
+  }
+  
 
 
 /* PRODUCT ////////////////////////////////////////////////////////////// */
@@ -682,19 +668,18 @@
 /* FOOTER ////////////////////////////////////////////////////////////// */
 
 .logoFooter {
-	width: 80px;
-	height: 80px;
+	width: 200px;
+	height: 200px;
 	position: relative;
 	display: flex;
-	right: 1em;
-	left: auto;
+
 }
 
 
 @media (max-width: 850px) {
 	.logoFooter {
-		width: 3em;
-		height: 3em;
+		width: 8em;
+		height: 8em;
 		position: relative;
 		display: flex;
 		left: 1px;
@@ -703,8 +688,8 @@
 
 @media (max-width: 750px) {
 	.logoFooter {
-		width: 3em;
-		height: 3em;
+		width: 8em;
+		height: 8em;
 		position: relative;
 		display: flex;
 		left: 1px;
@@ -713,8 +698,8 @@
 
 @media (max-width: 650px) {
 	.logoFooter {
-		width: 3em;
-		height: 3em;
+		width: 8em;
+		height: 8em;
 		position: relative;
 		display: flex;
 		left: 1px;
@@ -723,8 +708,8 @@
 
 @media (max-width: 450px) {
 	.logoFooter {
-		width: 3em;
-		height: 3em;
+		width: 8em;
+		height: 8em;
 		position: relative;
 		display: flex;
 		left: 1px;

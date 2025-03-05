@@ -103,16 +103,16 @@ const About = () => {
         
       </div>
 
-       <div className='row' style={{ backgroundColor: '#FFE2EB'}}>
-      <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-        <Image className={styles.dokterImg} src={ekles1}  alt= 'img'/>
-        </div>
-        <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-          <h1 className='dokterHeader hidden'>DR.EKLES</h1>
-            <p className='dokterTxt hidden'><b>produk DREWHITE</b> dikembangkan oleh <b>dr.Eklendro Youns Yohanes Senduk,D.AAAM, M.Kes </b>lulusan <i>American Academy Of Aesthetic Medicine </i>yang juga dikenal dengan Celebrity Doctor serta dijuluki sebagai <b>doctorpreneur</b> yang expert di bidang estetika. produk DREWHITE menghadirkan minuman collagen yang akan menjadikan kulit anda menjadi sehat dan cantik,
-Bagi kami kulit Anda adalah investasi masa depan Anda Dengan kulit yang sehat dapat meningkatkan aspek kehidupan anda Untuk mendapatkan  kulit yang sehat sangat ekonomis dengan DREWHITE.</p>
-        </div>
-      </div> 
+      <div className="dokterContainer">
+  <h1 className="dokterHeader">DR.EKLES</h1>
+  <div className="dokterImg">
+    <Image className={styles.dokterImg} src={ekles1} alt="img" />
+  </div>
+  <p className="dokterTxt">
+    <b>produk DREWHITE</b> dikembangkan oleh <b>dr.Eklendro Youns Yohanes Senduk,D.AAAM, M.Kes</b> lulusan <i>American Academy Of Aesthetic Medicine</i> yang juga dikenal dengan Celebrity Doctor serta dijuluki sebagai <b>doctorpreneur</b> yang expert di bidang estetika. produk DREWHITE menghadirkan minuman collagen yang akan menjadikan kulit anda menjadi sehat dan cantik. Bagi kami kulit Anda adalah investasi masa depan Anda. Dengan kulit yang sehat dapat meningkatkan aspek kehidupan anda. Untuk mendapatkan kulit yang sehat sangat ekonomis dengan DREWHITE.
+  </p>
+</div>
+
       <div className='col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12'>
         <h2 className="coaTitle hidden">CHIEF OPERATION AREA</h2>
         <p className='coaP hidden'>Berperan sebagai sosok yang memegang peran penuh terhadap tanggung jawab dalam mengatur dan mengelola pengembangan distrik baik dalam mapping wilayah, branding dan selling. 
