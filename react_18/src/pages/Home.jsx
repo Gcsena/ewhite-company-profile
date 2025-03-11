@@ -148,26 +148,38 @@ const Home = () => {
     </div> 
 
     <div className='containerLink'>
-      <p className='OrderText'>"Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />Tersedia Di Marketplace Favoritmu!"</p>
-      <div className='row linkWrapper'>
-        <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden' >
-          <img className='imgLink' src={shopee} alt="link"></img>
-          <a href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />SHOPEE</button></a>
-        </div>
-        <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <img className='imgLink' src={tokped} alt="link"></img>
-          <a href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TOKOPEDIA</button></a>
-        </div>
-        <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <img className='imgLink' src={whatsapp} alt="link"></img>
-          <a href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />WHATSAPP</button></a>
-        </div>
-        <div className='col-xl col-lg col-md-4 col-sm-6 col-7 linkComponent hidden'>
-          <img className='imgLink' src={tiktok} alt="link"></img>
-          <a href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer"><button className='btnLink btnAnimate'>ORDER VIA<br />TIKTOK</button></a>
-        </div>
-      </div>
+  <p className='OrderText'>
+    "Temukan Kulit Sehat Dan Bersinar Dengan Produk Collagen Kami,<br />
+    Tersedia Di Marketplace Favoritmu!"
+  </p>
+  <div className='row linkWrapper'>
+    <div className='col-xl col-lg col-md-4 col-sm-6 col-12 linkComponent'>
+      <img className='imgLink' src={shopee} alt="link" />
+      <a href="https://shp.ee/78mv6wi" target="_blank" rel="noopener noreferrer">
+        <button className='btnLink btnAnimate'>ORDER VIA SHOPEE</button>
+      </a>
     </div>
+    <div className='col-xl col-lg col-md-4 col-sm-6 col-12 linkComponent'>
+      <img className='imgLink' src={tokped} alt="link" />
+      <a href="https://tokopedia.link/drewhiteofficial" target="_blank" rel="noopener noreferrer">
+        <button className='btnLink btnAnimate'>ORDER VIA TOKOPEDIA</button>
+      </a>
+    </div>
+    <div className='col-xl col-lg col-md-4 col-sm-6 col-12 linkComponent'>
+      <img className='imgLink' src={whatsapp} alt="link" />
+      <a href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer">
+        <button className='btnLink btnAnimate'>ORDER VIA WHATSAPP</button>
+      </a>
+    </div>
+    <div className='col-xl col-lg col-md-4 col-sm-6 col-12 linkComponent'>
+      <img className='imgLink' src={tiktok} alt="link" />
+      <a href="https://vt.tiktok.com/ZS8XWCvL8/" target="_blank" rel="noopener noreferrer">
+        <button className='btnLink btnAnimate'>ORDER VIA TIKTOK</button>
+      </a>
+    </div>
+  </div>
+</div>
+
 </main>
   )
 }
