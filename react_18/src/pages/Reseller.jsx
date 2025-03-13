@@ -175,39 +175,41 @@ const Reseller = () => {
       <div className="resellerE">
         <h1 className="headE">CARA BERGABUNG MENJADI RESELLER</h1>
         <div className="caraWrapper row">
-          <div className="delayAnimation hidden col-xl-2 col-lg col-md-1">
-            <div className='iconWrapper'>
-            <img src={reseller9} alt="Avatar"></img>
+          <div className="delayAnimation hidden col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div className="iconWrapper">
+              <img src={reseller9} alt="Avatar" />
             </div>
             <p className="caraP">
               Direct Chat ke WA Admin DREWHITE atau melalui sistem kami
             </p>
           </div>
 
-          <div className="delayAnimation hidden col-xl-2 col-lg col-md-1">
-            <div className='iconWrapper'>
-            <img src={reseller8} alt="Avatar"></img>
+          <div className="delayAnimation hidden col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div className="iconWrapper">
+              <img src={reseller8} alt="Avatar" />
             </div>
             <p className="caraP">Isi form pendaftaran dan lakukan pembayaran</p>
           </div>
 
-          <div className="delayAnimation hidden col-xl-2 col-lg col-md-1">
-            <div className='iconWrapper'>
-            <img src={reseller7} alt="Avatar"></img>
+          <div className="delayAnimation hidden col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div className="iconWrapper">
+              <img src={reseller7} alt="Avatar" />
             </div>
             <p className="caraP">
               Lampirkan data pendaftaran dan bukti pembayaran
             </p>
           </div>
 
-          <div className="delayAnimation hidden col-xl-2 col-lg col-md-1">
-            <div className='iconWrapper'>
-            <img src={reseller6} alt="Avatar"></img>
+          <div className="delayAnimation hidden col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12">
+            <div className="iconWrapper">
+              <img src={reseller6} alt="Avatar" />
             </div>
             <p className="caraP">Pendaftaran member DREWHITE selesai</p>
           </div>
         </div>
       </div>
+
+
 
       {/* <div className='resellerF'>
           <h1 className='headC'>YUK LIBURAN KE SINGAPORE BARENG DR. EKLES & AMANDA MANOPO</h1>

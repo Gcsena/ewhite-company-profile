@@ -2463,59 +2463,102 @@ top: 2.5em;
 	color: #212121;
   }
 
+  .resellerE {
+	padding: 0 1em;
+  }
+
   .headE {
 	position: relative;
 	display: flex;
-	top: ;
-	left: 16em;
-	margin: 3em 0 3em 0;
+	justify-content: center;
+	text-align: center;
+	margin: 3em auto;
 	font-family: var(--font-montserrat);
-	font-style: normal;
 	font-weight: 700;
 	font-size: 1.5em;
 	color: #252525;
+	width: 100%; 
   }
+  
   .caraWrapper {
 	position: relative;
 	display: flex;
-	padding: ;
-	left: 14em;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 1em;
   }
-
+  
+  
+  .delayAnimation {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+  }
+  
   .iconWrapper {
-	position: relative;
-	display:flex;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 80px;
 	height: 80px;
-	left: 1.5em;
 	border-radius: 50%;
-	background-color: #FFA1B7;
-	margin: 3em 1.5em 1.5em 1.5em;
+	background-color: #ffa1b7;
+	margin-bottom: 1em;
   }
-
+  
   .iconWrapper img {
 	width: 40px;
 	height: auto;
-	display: block;
-	margin:auto;
-	
   }
   
-
   .caraP {
-	position: relative;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	top: ;
-	right: ;
 	font-family: var(--font-montserrat);
-	font-style: normal;
 	font-weight: 600;
 	font-size: 0.9em;
 	color: #000;
+	text-align: center;
   }
   
+  
+  @media (max-width: 992px) {
+	.headE {
+	  font-size: 1.3em;
+	}
+	.caraP {
+	  font-size: 0.85em;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.headE {
+	  font-size: 1.2em;
+	}
+	.caraP {
+	  font-size: 0.8em;
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.headE {
+	  font-size: 1em; 
+	  margin: 2em auto;
+	}
+	.caraP {
+	  font-size: 0.75em;
+	}
+	.iconWrapper {
+	  width: 60px; 
+	  height: 60px;
+	}
+	.iconWrapper img {
+	  width: 30px;
+	}
+  }
+  
+  
+  
+
  
   .joinWrapper {
 	position: relative;
@@ -2680,22 +2723,9 @@ top: 2.5em;
 		font-size: 1em;
 	  }
 
-	  .caraWrapper {
-		
-		padding: 4em;
-		left: 0;
-	  }
 
-	  .iconWrapper {
-		width: 80px;
-		height: 80px;
-		left: 1.5em;
-		margin: 3em 1.5em 1.5em 1.5em;
-	  }
-	
-	  .iconWrapper img {
-		width: 40px;
-	  }
+
+
 }
 
 @media (max-width: 350px) {
