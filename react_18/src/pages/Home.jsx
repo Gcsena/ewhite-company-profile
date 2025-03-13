@@ -68,10 +68,10 @@ const Home = () => {
 
   <div className='containerB' style={{padding: '0 7em 5em 7em', position: 'relative', display: 'flex'}}>
     <div className="row">
-      <div className="col-xl-4">
+      <div className="col-xl-4 col-lg-4 col-md-3">
          <img className="imgB" src={produk} alt="Avatar"></img> 
       </div>
-      <div className="textwrapB col-xl-5">
+      <div className="textwrapB col-xl-4 col-lg-4 col-md-4">
    
 <div className="roller">
   <h1
