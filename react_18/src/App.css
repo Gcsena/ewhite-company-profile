@@ -2422,46 +2422,109 @@ top: 2.5em;
   }
 	
 
-  .resellerIcon {
-	position: relative;
-	display: flex;
-	background-color: #FF8298;
-	border-radius: 20%;
-	width: 70px;
-	height: 70px;
-	padding: 0.5em;
-	left: em;
-  }
   .resellerC {
 	position: relative;
-	left: 4em;
-	margin-top: ;
-	margin-bottom: ;
-	margin-left: 5em;
-	margin-right: ;
+	margin: 3em auto;
+	padding: 2em;
+	max-width: 1200px;
   }
-
+  
   .headC {
-	position: relative;
-	display: flex;
-	top: 2em;
-	left: 9em;
-	margin-bottom: 5em;
-	text-align: center;
 	font-family: var(--font-montserrat);
-	font-style: normal;
 	font-weight: 700;
 	font-size: 1.7em;
 	color: #252525;
+	margin-bottom: 2em;
+	text-align: center;
   }
-
+  
+  .resellerIcon {
+	width: 70px;
+	height: 70px;
+	background-color: #ff8298;
+	border-radius: 50%;
+	padding: 0.5em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+ 
+  .benefit-box {
+	display: flex;
+	align-items: flex-start; 
+	gap: 15px;
+	padding: 25px;
+  }
+  
   .manfaatP {
 	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 400;
 	font-size: 1em;
 	color: #212121;
+	flex: 1;
   }
+  
+
+  @media (max-width: 1024px) {
+	.headC {
+	  font-size: 1.5em;
+	}
+	
+	.resellerIcon {
+	  width: 60px;
+	  height: 60px;
+	}
+  
+	.manfaatP {
+	  font-size: 0.9em;
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.headC {
+	  font-size: 1.3em;
+	}
+  
+	.resellerIcon {
+	  width: 50px;
+	  height: 50px;
+	}
+  
+	.manfaatP {
+	  font-size: 0.85em;
+	}
+  
+	.benefit-box {
+	  flex-direction: column;
+	  align-items: center;
+	  text-align: center;
+	  padding: 20px;
+	}
+  
+	.resellerIcon {
+	  margin-bottom: 10px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.headC {
+	  font-size: 1em;
+	}
+  
+	.resellerIcon {
+	  width: 40px;
+	  height: 40px;
+	}
+  
+	.manfaatP {
+	  font-size: 0.8em;
+	}
+  
+	.benefit-box {
+	  padding: 10px;
+	}
+  }
+  
 
   .resellerE {
 	padding: 0 1em;
@@ -2698,30 +2761,7 @@ top: 2.5em;
 		bottom: 0.5em;
 	}
 
-	.resellerIcon {
-		width: 60px;
-		height: 60px;
-		padding: 0.5em;
-		left: em;
-	  }
-	  .resellerC {
-		left: 0;
-		margin-left: 1em;
-	  }
-	
-	  .headC {
-		top: 1em;
-		left: 0.5em;
-		margin-bottom: 5em;
-		text-align: center;
-		font-size: 1.3em;
-		margin-right: 2em;
-		
-	  }
-	
-	  .manfaatP {
-		font-size: 1em;
-	  }
+
 
 
 

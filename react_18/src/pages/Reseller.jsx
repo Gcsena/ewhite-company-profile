@@ -100,77 +100,60 @@ const Reseller = () => {
           </div>
         </div>
       </div>
-      <div className="resellerC">
-        <h1 className="headC">
-          MANFAAT BERGABUNG MENJADI <br /> RESELLER DREWHITE
-        </h1>
-        <div className="row">
-          <div className="col-xl-1 col-lg col-md-1">
-            <img className="resellerIcon hidden" src={reseller5} alt="Avatar"></img>
-          </div>
-          <div className="col-xl-4 col-lg col-md-1">
-            <p className="manfaatP">
-              <b>Margin profit yang menarik</b> <br /> Lorem ipsum dolor sit
-              amet consectetur. Vitae ut dignissim nam tellus adipiscing nibh
-              aliquet.
-            </p>
-          </div>
-          <div className="col-xl-1 col-lg col-md-1">
-            <img className="resellerIcon hidden" src={reseller4} alt="Avatar"></img>
-          </div>
-          <div className="col-xl-4 col-lg col-md-1">
-            <p className="manfaatP">
-              <b>Dapat potongan harga dan poin</b> <br /> Lorem ipsum dolor sit
-              amet consectetur. Vitae ut dignissim nam tellus adipiscing nibh
-              aliquet.
-            </p>
-          </div>
+      <div className="container-fluid resellerC">
+      <h1 className="headC">
+        MANFAAT BERGABUNG MENJADI <br /> RESELLER DREWHITE
+      </h1>
+
+      <div className="row justify-content-center">
+        <div className="col-md-6 benefit-box">
+          <img className="resellerIcon" src={reseller5} alt="Benefit 1" />
+          <p className="manfaatP">
+            <b>Margin Profit Yang Menarik</b> <br />
+            Produk yang sudah teruji memiliki permintaan yang tinggi di pasaran serta margin profit yang sangat menguntungkan
+          </p>
         </div>
-        <div className="row">
-          <div className="col-xl-1 col-lg col-md-1">
-            <img className="resellerIcon hidden" src={reseller3} alt="Avatar"></img>
-          </div>
-          <div className="col-xl-4 col-lg col-md-1">
-            <p className="manfaatP">
-              <b>Mendapat reward secara berkala</b> <br /> Lorem ipsum dolor sit
-              amet consectetur. Vitae ut dignissim nam tellus adipiscing nibh
-              aliquet.
-            </p>
-          </div>
-          <div className="col-xl-1 col-lg col-md-1">
-            <img className="resellerIcon hidden" src={reseller1} alt="Avatar"></img>
-          </div>
-          <div className="col-xl-4 col-lg col-md-1">
-            <p className="manfaatP">
-              <b>Dibantu dalam pengembangan bisnis DREWHITE</b> <br /> Lorem
-              ipsum dolor sit amet consectetur. Vitae ut dignissim nam tellus
-              adipiscing nibh aliquet.
-            </p>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-xl-1 col-lg col-md-1">
-            <img className="resellerIcon hidden" src={reseller2} alt="Avatar"></img>
-          </div>
-          <div className="col-xl-4 col-lg col-md-1">
-            <p className="manfaatP">
-              <b>Pelayanan konsultasi langsung dengan Dokter</b> <br /> Lorem
-              ipsum dolor sit amet consectetur. Vitae ut dignissim nam tellus
-              adipiscing nibh aliquet.
-            </p>
-          </div>
+
+        <div className="col-md-6 benefit-box">
+          <img className="resellerIcon" src={reseller4} alt="Benefit 2" />
+          <p className="manfaatP">
+            <b>Benefit Potongan Harga dan Poin</b> <br />
+            Dapatkan harga khusus reseller dan poin untuk mendapatkan reward.
+          </p>
         </div>
       </div>
 
-      {/* <div className='resellerD'>
-          <h1 className='headC'>TESTIMONI DARI RESELLER KAMI</h1>
-          <div className='row'>
-            <div className="col-xl col-lg col-md-1">
-
-        
+      <div className="row justify-content-center">
+        <div className="col-md-6 benefit-box">
+          <img className="resellerIcon" src={reseller3} alt="Benefit 3" />
+          <p className="manfaatP">
+            <b>Mendapatkan Reward Secara Berkala</b> <br />
+            Dapatkan reward menarik seperti jalan-jalan ke Luar Negeri bareng Amanda dan Dokter Ekles dan reward menarik lainnya
+          </p>
         </div>
-          </div>
-            </div> */}
+
+        <div className="col-md-6 benefit-box">
+          <img className="resellerIcon" src={reseller1} alt="Benefit 4" />
+          <p className="manfaatP">
+            <b>Dibantu Dalam Pengembangan Bisnis DREWHITE</b> <br />
+            Mendapatkan bimbingan pengembangan bisnis yang diadakan setiap seminggu sekali.
+          </p>
+        </div>
+      </div>
+
+     
+      <div className="row justify-content-center">
+        <div className="col-md-6 benefit-box">
+          <img className="resellerIcon" src={reseller2} alt="Benefit 5" />
+          <p className="manfaatP">
+            <b>Pelayanan Konsultasi Langsung Dengan Dokter</b> <br />
+            Pelayanan ekslusif konsultasi produk dan bisnis dengan Dr. Ekles / tim DREWHITE setiap bulan.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
 
       <div className="resellerE">
         <h1 className="headE">CARA BERGABUNG MENJADI RESELLER</h1>
