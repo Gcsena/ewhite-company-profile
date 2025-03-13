@@ -231,63 +231,51 @@ main .pg-header h1 {
 	color: #000;
 }
 
+.shadowHeader {
+	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .apayang1 {
-	/* em causing bug  */
-	position: relative;
 	display: flex;
-	width: 802px;
-	height: 80px; 
-	font-family: var(--font-playfair);
-	top: 1em;
-	margin-bottom: auto;
-	left: 1.2em;
+	position: relative;
+	font-family: 'Playfair Display';
 	font-style: normal;
 	font-weight: 700;
-	font-size: 3.6em;
-	line-height: 80px;
-	letter-spacing: -0.01em;
-	color: #292929;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	}
-	
-	.apayang2 {
-	/* em causing bug  */
-	position: relative;
-	display: flex;
-	width: 802px;
-	height: 80px; 
-	font-family: var(--font-playfair);
-	top: 1em;
-	left: 1.2em;
-	margin-bottom: auto;
-	font-style: normal;
-	font-weight: 700;
-	font-size: 3.6em;
-	line-height: 80px;
-	letter-spacing: -0.01em;
-	color: #292929;
-	text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-	}
-	.apayangP {
-	position: relative;
-	display: flex;
-	top: 5em;
-	left: 4.5em;
-	font-family: var(--font-manrope);
-	font-style: normal;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 32px;
+	font-size: calc(0.5vw + 18px);
+	line-height: 31px;
+	align-items: center;
 	color: #292929;
 	}
+  
 .imgC {
-	display: flex;
-	position: relative;
-	width: 30em;
-	height: 22em;
-	left: 2.5em;
+	display: block;
+	width: 100%;
+	max-width: 28em;
+	height: auto;
+	margin: 0 auto;
 	top: 4em;
+}
+  
+  @media (max-width: 768px) {
+  
+	.imgC {
+	  max-width: 100%;
+	  width: 45%; 
+	  margin-top: 2em;
+	  display: none;
 	}
+  }
+  
+  @media (max-width: 480px) {
+
+	.apayang1 {
+		font-size: calc(0.5vw + 16px);
+	}
+  
+	.imgC {
+	  display: none;
+	}
+  }
 
 .kolagen {
 	display: flex;
@@ -375,13 +363,7 @@ main .pg-header h1 {
 		display: flex;
 		right: 2em;
 	}
-	.imgC {
-		width: 20em;
-		height: 20em;
-		left: 4em;
-		top: -17em;
-		margin-top: 1em;
-		}
+
 
 	.textwrapB {
 		bottom: 9em;
@@ -393,28 +375,7 @@ main .pg-header h1 {
 		font-size: 19px;
 	}
 	
-	.apayang1 {
-		/* em causing bug  */
-		width: 500px;
-		height: 80px; 
-		font-size: 2.3em;
-		margin-bottom: -40px;
-		}
 
-	.apayang2 {
-		/* em causing bug  */
-		width: 500px;
-		height: 80px; 
-		font-size: 2.3em;
-		margin-bottom: 1em;
-		}	
-
-	.apayangP {
-		top: 15em;
-		left: 0.7em;
-		font-size: 18px;
-		margin: 1em;
-		}
 	.model4 {
 		width: 100%;
 		height: 100%;
@@ -483,13 +444,7 @@ main .pg-header h1 {
 		display: flex;
 		right: 4em;
 	}
-	.imgC {
-		width: 17em;
-		height: 17em;
-		left: 5em;
-		top: -18em;
-		margin-top: 1em;
-		}
+
 
 	.textwrapB {
 		bottom: 9em;
@@ -500,28 +455,7 @@ main .pg-header h1 {
 	.paragrafB {
 		font-size: 18px;
 	}
-	.apayang1 {
-		/* em causing bug  */
-		width: 500px;
-		height: 80px; 
-		font-size: 2.3em;
-		margin-bottom: -40px;
-		}
 
-	.apayang2 {
-		/* em causing bug  */
-		width: 500px;
-		height: 80px; 
-		font-size: 2.3em;
-		margin-bottom: 1em;
-		}	
-
-	.apayangP {
-		top: 15em;
-		left: 0.7em;
-		font-size: 18px;
-		margin: 1em;
-		}
 	.model4 {
 		width: 100%;
 		height: 100%;
@@ -583,42 +517,14 @@ main .pg-header h1 {
 		
 
 	}
-	.imgC {
-		width: 20em;
-		height: 15em;
-		left: 1em;
-		top: -22.2em;
-		margin-top: 1em;
-		}
+
 	.textwrapB {
 		bottom: 10em;
 		left: auto;
 		right: 5em;
 		position: relative; 
 	}
-	.apayang1 {
-		/* em causing bug  */
-		width: 500px;
-		height: 80px; 
-		font-size: 1.5em;
-		margin-bottom: -40px;
-		top: -0.7em;
-		}
 
-	.apayang2 {
-		/* em causing bug  */
-		width: 500px;
-		height: 80px; 
-		font-size: 1.5em;
-		margin-bottom: 1em;
-		top: -0.7em;
-		}	
-	.apayangP {
-		top: 15em;
-		left: 0.7em;
-		font-size: 15px;
-		margin: 1em;
-		}
 	.headerhomeC {
 		position: relative;
 		display: flex;
@@ -653,12 +559,7 @@ main .pg-header h1 {
 		}
 	}
 
-	/* iphone 6 */
-	@media (max-height: 600px)  and (max-width: 450px){
-		.imgC {
-			top: -20em;
-		}
-	}
+
 
 
 	@media (max-width: 350px) {
@@ -704,13 +605,7 @@ main .pg-header h1 {
 				margin-bottom: 1em;
 				
 			}
-			.imgC {
-				width: 15em;
-				height: 15em;
-				left: 1em;
-				top: -25em;
-				
-				}
+
 			.textwrapB {
 				bottom: 10em;
 				left: auto;
@@ -805,7 +700,7 @@ display: flex;
 font-family: var(--font-manrope);
 font-style: normal;
 font-weight: 400;
-font-size: 16px;
+font-size: 18px;
 line-height: 32px;
 color: #292929;
 }

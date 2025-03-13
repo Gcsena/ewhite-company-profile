@@ -106,31 +106,33 @@ const Home = () => {
   </div>
   </div>
 
-    <div className="row">
-      <div className="col-xl-6" >
-        <h1 className='apayang1 hidden'>Apa yang membuat</h1>
-        <h1 className='apayang2 hidden'>DREWHITE berbeda?</h1>
-        <p className='apayangP hidden'>Banyak penelitian yang membuktikan bahwa kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput. Kolagen juga berperan penting dalam proses penyembuhan luka,selain mengandung kolagen DREWHITE juga mengandung L-Glutathione dan Bifidobacterium Longum yang memiliki banyak manfaat.</p>
-      </div>
-      <div className="col-6">
-      <img className="imgC" src={gambar3} alt="Avatar"></img>
-      </div>
-      </div>
+<div className="row kolagen align-items-center m-4">
+  <div className="col-xl-6 col-lg-6 col-md-6">
+    <h6 className='apayang1 hidden shadowHeader'>Apa yang membuat DREWHITE berbeda?</h6>
+    <p className='paragrafC hidden'>
+      Banyak penelitian yang membuktikan bahwa kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput. Kolagen juga berperan penting dalam proses penyembuhan luka, selain mengandung kolagen DREWHITE juga mengandung L-Glutathione dan Bifidobacterium Longum yang memiliki banyak manfaat.
+    </p>
+  </div>
+  <div className="col-xl-6 col-lg-6 col-md-6 d-flex justify-content-center">
+    <img className="imgC" src={gambar3} alt="Avatar" />
+  </div>
+</div>
+
       
       <div className="row kolagen">
         <div className="col-xl-4 col-lg-4 col-md ">
         <img className='komposisi' src={komposisi3} alt='link'></img>
-          <h6 className='header2C hidden'>Collagen Tripeptide </h6>
+          <h6 className='header2C hidden shadowHeader'>Collagen Tripeptide </h6>
           <p className='paragrafC hidden'>Kolagen memiliki manfaat dalam membantu mengencangkan kulit, mencegah penuaan dini, sekaligus mengurangi kulit kering dan keriput.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
         <img className='komposisi' src={komposisi2} alt='link'></img>
-          <h6 className='header2C hidden'>L-Glutathione</h6>
+          <h6 className='header2C hidden shadowHeader'>L-Glutathione</h6>
           <p className='paragrafC hidden'>Glutathione penting bagi kesehatan, diantaranya mencegah kerusakan sel tubuh, memperbaiki sel dan jaringan tubuh yang rusak, serta menunjang sistem kekebalan tubuh.</p>
         </div>
         <div className="col-xl-4 col-lg-4 col-md ">
         <img className='komposisi' src={komposisi1} alt='link'></img>
-          <h5 className='header2C hidden'>Bifidobacterium Longum</h5>
+          <h5 className='header2C hidden shadowHeader'>Bifidobacterium Longum</h5>
           <p className='paragrafC hidden'>Bifidobacterium longum yang kebal antibiotik dapat membantu mengobati penyakit radiasi. Dapat mencegah pertumbuhan bakteri berbahaya yang menyebabkan infeksi dan menetralkan racun di usus.</p>
         </div>
       </div>  
