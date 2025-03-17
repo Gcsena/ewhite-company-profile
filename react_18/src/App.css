@@ -2210,19 +2210,6 @@ footer .copyrights a:hover {
 	color: #DD3D59;
 }
 
-.txtA {
-	position: relative;
-	display: flex;
-	align-items: center;
-	text-align: center;
-	top: 10em;
-	right: 6em;
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 500;
-	font-size: 1em;
-	color: #212121;
-}
 
 .headA2 {
 	position: relative;
@@ -2237,28 +2224,8 @@ footer .copyrights a:hover {
 }
 
 
-.btnWA1 {
-	position: relative;
-	display: flex;
-	top: 11em;
-	right: 1.2em;
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1.2em;
-	color: #FFFFFF;
-	background-color: #34D644;
-	border: none;
-	border-radius: 5px;
-	padding: 0.5em 1em 0.5em 1em;
-}  
 
-.iconWa {
-	position: relative;
-	display: flex;
-	top: 5px;
-	right: 7px;
-}
+
 
 
 .eklesReseller {
@@ -2619,110 +2586,135 @@ top: 2.5em;
 	}
   }
   
-  
-  
-
- 
-  .joinWrapper {
-	position: relative;
+  .resellerF {
 	display: flex;
-	padding: 5em;
-  }
-
-  .headF {
-	position: relative;
-	display: flex;
-	top: 2em;
-	left: 11em;
-	text-align: center;
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1.7em;
-	color: #252525;
-	margin: 3em 0 1em 0;
-  }
-
-  .konsulWrapper {
-	position: relative;
-	display: flex;
-	padding: 0 2em 5em 2em;
-
-  }
-
-  .headF2 {
-	position: relative;
-	display: flex;
-	top: ;
-	left: 11em;
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1.7em;
-	color: #DD3D59;
-	margin: 3em 0 1em 0;
-  }
-  .txtF {
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 500;
-	font-size: 1em;
-	color: #212121;
-  }
-
-  .txtF2 {
-	position: relative;
-	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
 	text-align: center;
-	top: ;
-	left: 10em;
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 500;
-	font-size: 1em;
-	color: #212121;
+	padding: 5em 1em;
+	margin: auto;
+	max-width: 90vw;
+	min-height: 60vh;
   }
-
-  .btnWA3 {
-	position: relative;
+  
+  .joinWrapper {
 	display: flex;
-	top: ;
-	left: 29em;
-	font-family: var(--font-montserrat);
-	font-style: normal;
-	font-weight: 700;
-	font-size: 1em;
-	color: #FFFFFF;
-	background-color: #34D644;
-	border: none;
-	border-radius: 5px;
-	padding: 0.5em 1em 0.5em 1em;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	width: 100%;
+	max-width: 1100px;
   }
-
-
+  
+  .imgContainer {
+	flex: 1;
+	display: flex;
+	justify-content: center;
+  }
+  
   .resellerCoa {
-	position: relative;
-	display: flex;
-	width: 90%;
-	height: 90%;
+	width: 100%;
+	max-width: 500px;
+	height: auto;
   }
+  
+  .textContainer {
+	flex: 1;
+	max-width: 600px;
+	text-align: left;
+  }
+  
 
-  .btnWA2 {
-	position: relative;
-	display: flex;
-	right: ;
+  .headF {
 	font-family: var(--font-montserrat);
-	font-style: normal;
 	font-weight: 700;
-	font-size: 1.2em;
+	font-size: clamp(1.2rem, 2vw, 1.5rem);
+	color: #DD3D59;
+	margin-bottom: 0.8em;
+  }
+  
+  .txtF {
+	font-family: var(--font-montserrat);
+	font-weight: 500;
+	font-size: clamp(0.9rem, 1.2vw, 1.1rem);
+	color: #212121;
+	margin-bottom: 1.2em;
+  }
+  
+
+  .btnWA {
+	font-family: var(--font-montserrat);
+	font-weight: 700;
+	font-size: 1rem;
 	color: #FFFFFF;
 	background-color: #34D644;
 	border: none;
-	border-radius: 5px;
-	padding: 0.5em 1em 0.5em 1em;
-}
-
+	border-radius: 8px;
+	padding: 0.6em 1.8em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+  }
+  
+  .btnWA:hover {
+	background-color: #2EB83A;
+  }
+  
+  .iconWa {
+	margin-right: 8px;
+	font-size: 1.2em;
+  }
+  
+  @media (max-width: 992px) {
+	.joinWrapper {
+	  flex-direction: column;
+	  text-align: center;
+	}
+  
+	.textContainer {
+	  text-align: center;
+	}
+  
+	.resellerCoa {
+	  max-width: 350px;
+	}
+  }
+  
+  @media (max-width: 992px) {
+	.btnWA {
+	  width: 100%;
+	  padding: 0.5em 1.5em;
+	}
+  
+	.resellerCoa {
+	  max-width: 300px;
+	}
+  }
+  
+  @media (max-width: 576px) {
+	.headF {
+	  font-size: 1rem;
+	}
+  
+	.txtF {
+	  font-size: 0.9rem;
+	}
+  
+	.btnWA {
+	  font-size: 0.85rem;
+	  width: 100%;
+	}
+  
+	.resellerCoa {
+	  max-width: 250px;
+	}
+  }
+  
+  
 @media (max-width: 450px) {
 	
 	.headB {
