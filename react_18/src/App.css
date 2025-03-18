@@ -28,6 +28,11 @@ a {
 	text-decoration: none;
 }
 
+::selection {
+	background-color: #FF8298; 
+	color: #FEFCF3; 
+  }
+
 
 /* MAIN ////////////////////////////////////////////////////////////// */
 
@@ -1663,14 +1668,29 @@ main .redbtnB {
 
 
 .carouselProduk {
-	max-width: 100%;
-	max-height: 500px; /* or any other desired value */
+	width: 100%;  
+	height: auto; 
+	max-height: 500px; 
+	object-fit: contain; 
+	display: block;
+	margin: 0 auto; 
+  }
+  
+  @media (max-width: 768px) {
+	.carouselProduk {
+	  max-height: 300px;
+	  margin-bottom: 20px;
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.carouselProduk {
+	  max-height: 200px;
+	}
   }
   
 .containerHow {
 	position: relative;
-	background-color: #ff8298;
-	padding-top: 2em;
 }
 
 .HowTo {
@@ -1700,20 +1720,6 @@ main .redbtnB {
 }
 
 
-
-
-/* size using px for prevent following sizze change when open carousel,but not responsive */
-.ingredientImg {
-	position: relative;
-	display: flex;
-	width: 450px;
-	height: 500px;
-	left: 3em;
-	margin-top: 4em;
-	margin-bottom: 4em;
-
-}
-
 .headerIngredient {
 	display: flex;
 	position: relative;
@@ -1730,7 +1736,7 @@ main .redbtnB {
 	justify-content: center;
 }
 
-@media (min-width: 450px) and (max-width: 990px) {
+@media (max-width: 990px) {
 	.controlled-carousel-container .carousel-control-prev,
 	.controlled-carousel-container .carousel-control-next,
 	.controlled-carousel-container .carousel-indicators {
@@ -1752,7 +1758,6 @@ main .redbtnB {
 		height: 250px;
 		margin-top: 1em;
 		margin-bottom: 5em;
-		/* margin-top: 2em; */
 	}
 	.textProdukA {
 		margin-top: 3em;
@@ -1782,20 +1787,10 @@ main .redbtnB {
 		
 		top:1em;
 }
-.ingredientImg {
-	position: relative;
-	display: flex;
-	width: 50%;
-	height: 70%;
-	left: 8em;
-	top: 3em;
-}
 }
 
 @media (max-width: 550px) {
-.carouselProduk {
-	padding: 2em 0 2em 0;
-}
+
 
 .HowToTxt {
 	top: 28%;
@@ -1810,12 +1805,8 @@ main .redbtnB {
 	.banner {
 		width: 100%;
 		height: 200px;
-		/* margin-top: 2em; */
 	}
-	.carouselProduk {
-		padding: 2em 0 2em 0;
-		
-	}
+
 	.textProdukA {
 		margin-top: 3em;
 	}
@@ -1844,21 +1835,13 @@ main .redbtnB {
 		
 		top:1em;
 }
-.ingredientImg {
-	position: relative;
-	display: flex;
-	width: 50%;
-	height: 70%;
-	left: 5em;
-	top: 3em;
-}
+
 
 }
 @media (max-width: 350px) {
 .banner {
 	width: 100%;
 	height: 150px;
-	/* margin-top: 2em; */
 }
 .HowToTxt {
 	top: 35%;
@@ -1918,8 +1901,8 @@ header .nav-link:hover {
 	color: #DD3D59;
 }
 
-header .nav-link:after {
-	color: #DD3D59 !important;
+header .nav-link.active {
+    color: #DD3D59;
 }
 
 @media (max-width: 568px) {

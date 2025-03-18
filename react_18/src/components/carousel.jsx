@@ -68,10 +68,11 @@ export const CarouselHome = () =>  {
   };
 
   return (
+  <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
         <img
-          className="d-block carouselProduk "
+          className="d-block carouselProduk"
           src={model2}
           alt="First slide"
         />
@@ -107,6 +108,7 @@ export const CarouselHome = () =>  {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+    </div>
   );
 }
 

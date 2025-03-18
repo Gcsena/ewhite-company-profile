@@ -60,7 +60,7 @@ const Products = () => {
   return (
     <main>
       
-       <div className="outer-container ">
+       <div className="outer-container">
       <div className="image-container" style={{backgroundImage: `linear-gradient(to top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url(${produkHand})`}}>
         <h2 className="section-title on-dark">
           <span className="paralax-title">
@@ -107,10 +107,10 @@ DREWHITE bermanfaat untuk : <br /> <br />
         <h1 className='HowToTxt'>HOW TO DRINK</h1>
         <img className='HowTo' src={group9} alt="Avatar"></img>
       </div>
-    <div className='container'>
+    <div className='container' style={{marginBottom: '30px'}}>
       <div className='row'>
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12'>
-        <img className='ingredientImg' src={produk1} alt="Avatar"></img>
+        <img className='carouselProduk' style={{marginTop: '6em'}} src={produk1} alt="Avatar"></img>
       </div> 
       <div className='col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 '>
       <h1 className='headerIngredient' id="ingredient">INGREDIENTS</h1> 
