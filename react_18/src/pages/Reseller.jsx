@@ -72,28 +72,28 @@ const Reseller = () => {
       </div>
 
       <div className="resellerB">
-        <h1 className="headB">PILIHAN MEMBERSHIP DREWHITE</h1>
+        <h1 className="headC">PILIHAN MEMBERSHIP DREWHITE</h1>
         <div className="row memberParent">
-          <div className="memberWrap delayAnimation hidden col-xl-3 col-lg col-md-1 col-sm-1">
+          <div className="memberWrap hidden col-xl-3 col-lg col-md-6 col-sm-6 col-7">
             <div className="memberTitle">BASIC</div>
             <div className="memberPrice">Rp. 4.207.500</div>
-            <div className="memberDisc">49.500.000</div>
+            <div className="memberDisc">7.500.000</div>
             <div className="memberDesc">
               Minimal order 50 box dengan diskon 15%
             </div>
           </div>
-          <div className="memberWrap2 delayAnimation hidden col-xl-3 col-lg col-md-1 col-sm-1">
+          <div className="memberWrap2 hidden col-xl-3 col-lg col-md-6 col-sm-6 col-7">
             <div className="memberTitle2">PRO</div>
             <div className="memberPrice">Rp. 32.175.000</div>
-            <div className="memberDisc">49.500.000</div>
+            <div className="memberDisc">45.500.000</div>
             <div className="memberDesc">
               Minimal order 50 box dengan diskon 15%
             </div>
           </div>
-          <div className="memberWrap delayAnimation hidden col-xl-3 col-lg col-md-1 col-sm-1">
+          <div className="memberWrap hidden col-xl-3 col-lg col-md-6 col-sm-6 col-7">
             <div className="memberTitle">MASTER</div>
             <div className="memberPrice">Rp. 19.800.000</div>
-            <div className="memberDisc">49.500.000</div>
+            <div className="memberDisc">25.500.000</div>
             <div className="memberDesc">
               Minimal order 50 box dengan diskon 15%
             </div>
