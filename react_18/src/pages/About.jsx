@@ -59,7 +59,7 @@ const About = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-           <h3 className='carouselCaption'>ABOUT US</h3>
+           {/* <h3 className='carouselCaption'>ABOUT US</h3> */}
           <p className='carouselP'>SIAPAKAH DIBALIK DR.EWHITE?</p> 
         </Carousel.Caption>
       </Carousel.Item>
@@ -70,8 +70,8 @@ const About = () => {
           alt="Second slide"
         />
         <Carousel.Caption>
-           <h3 className='carouselCaption'>ABOUT US</h3>
-          <p className='carouselP'>SIAPAKAH DIBALIK DR.EWHITE?</p> 
+           {/* <h3 className='carouselCaption'>ABOUT US</h3> */}
+          <p className='carouselP'>APA ITU COA DAN PERAN PENTING YANG MEREKA PEGANG</p> 
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item className='gradient'>
@@ -81,8 +81,8 @@ const About = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-           <h3 className='carouselCaption'>ABOUT US</h3>
-          <p className='carouselP'>SIAPAKAH DIBALIK DR.EWHITE?</p> 
+           {/* <h3 className='carouselCaption'>ABOUT US</h3> */}
+          <p className='carouselP'>MENGENAL DR.EKLES LEBIH DEKAT</p> 
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

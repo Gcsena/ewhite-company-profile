@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom'
+import '../App.css';
+import produk from '../images/produk.png';
 
 const Error = () => {
   return (
-    <main>
-       <div className="pg-header">
-        <div className="container">
-          <h1>404 Error</h1>
-        </div>
-      </div>
-      <div className="container content">
-        <p>Page not found...</p>
-        <Link to="/" className="btn btn-primary">Go Back to Homepage</Link>
-      </div>
+    <main className="errorMain">
+        <img
+          className="d-block carouselProduk"
+          src={produk}
+          alt="Third slide"
+        />
+          <h6 className='apayang1'>Halaman yang anda cari tidak ditemukan</h6>
+          <Link to="/" className="errorBtn" style={{marginTop: '30px'}}>KEMBALI KE HOMEPAGE</Link>
     </main>
   )
 }

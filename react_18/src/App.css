@@ -1110,8 +1110,8 @@ main .redbtnB {
 
 }
 .carouselP {
-	font-size: 20px;
-	color: #D1d2d3;
+	font-size: 25px;
+	color: #d1d2d3da;
 }
 .gradient {
 	position: relative;
@@ -2767,3 +2767,49 @@ top: 2.5em;
 }
 
 
+/* ERROR 404 ////////////////////////////////////////////////////////////// */
+
+
+.errorMain {
+	background: linear-gradient(0deg, #FFC8D1 0%, rgba(255, 171, 171, 0) 100%);
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  }
+
+
+.errorBtn {
+	font-family: var(--font-montserrat);
+	font-weight: 700;
+	font-size: 1rem;
+	color: #FFFFFF;
+	background-color: #FF8298;
+	border: none;
+	border-radius: 8px;
+	padding: 0.6em 1.8em;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: background 0.3s ease-in-out;
+  }
+
+  .errorBtn:hover {
+	background-color: #ee4765;
+	color: #FFFFFF;
+  }
+
+  .apayang1 {
+	font-family: 'Playfair Display';
+	font-style: normal;
+	font-weight: 700;
+	font-size: calc(0.5vw + 18px);
+	line-height: 31px;
+	color: #292929;
+	}
+
+/* ERROR 404 ////////////////////////////////////////////////////////////// */
