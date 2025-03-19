@@ -10,7 +10,7 @@ const Error = () => {
           src={produk}
           alt="Third slide"
         />
-          <h6 className='apayang1'>Halaman yang anda cari tidak ditemukan</h6>
+          <h6 className='errTxt'>Halaman yang anda cari tidak ditemukan</h6>
           <Link to="/" className="errorBtn" style={{marginTop: '30px'}}>KEMBALI KE HOMEPAGE</Link>
     </main>
   )

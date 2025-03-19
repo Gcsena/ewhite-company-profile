@@ -2803,7 +2803,11 @@ top: 2.5em;
 	color: #FFFFFF;
   }
 
-  .apayang1 {
+  .errTxt {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
 	font-family: 'Playfair Display';
 	font-style: normal;
 	font-weight: 700;
