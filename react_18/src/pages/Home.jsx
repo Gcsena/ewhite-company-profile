@@ -1,9 +1,9 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 import { Accordion } from '../components/accordion.jsx';
 import { CarouselHome } from '../components/carousel.jsx';
-import model2 from '../images/model2.png'
-import modelWomenEye from '../images/modelWomenEye.jpg'
+import amanda from '../images/amanda.png'
+import ekles4 from '../images/ekles4.png'
 import model4 from '../images/model/model4.png'
 import produk from '../images/produk.png'
 import gambar3 from '../images/gambar3.png'
@@ -43,28 +43,81 @@ const Home = () => {
     //clean up observer function for prevent unexpected behaviour*not fixed yet 
     return () => observer.disconnect();
   }, []);
+
+  // responsive containerA design* handle the multiple html design
+  const [isDesktop, setIsDesktop] = useState(true);
+
+  const checkScreenSize = () => {
+    if (window.innerWidth > 768) {
+      setIsDesktop(true);
+    } else {
+      setIsDesktop(false);
+    }
+  };
+
+  useEffect(() => {
+    checkScreenSize();
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
   
     return (
     <main> 
 
 
-  <div className='containerA' style={{paddingBottom: '10em', position: 'relative', display: 'flex'}}>
-     <div className="row">  {/*col-xl-6 col-lg-6 col-md-6 col-sm-1 col-1 */}
-      <div className="col-xl col-lg col-md-1"> 
-        <h1 className='headerA hidden' style={{color:'#DA2A52'}}> Nikmati Rasa Manis<br />Raspberry</h1>
-         <h1 className='headerA hidden' style={{color:'#32A642'}}>DREWHITE</h1> 
-          <p className='paragrafA hidden'>Perkenalkan minuman kolagen rasa raspberry terbaru dari kami!<br />Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi <br />dan rasa buah yang segar dalam setiap tegukan dapat menutrisi tubuh<br /> dan memanjakan kulit anda yang segar dalam setiap tegukan dapat<br /> menutrisi tubuh dan memanjakan kulit anda.</p>
-        <a href='products' rel="noopener noreferrer">
-        <button className='redbtnC btnAnimate hidden' >LEARN MORE</button>
-       </a>
-      </div>
-      <div className="col-xl-6 col-lg-6">
-        <img className='imgA' src={model2} alt="Avatar"></img>
-        {/* { <CarouselHome /> } */}
-      </div>
-      </div>
-    {/* </div> */}
-  </div>
+<div className="containerA">
+      {isDesktop ? (
+        // Desktop Layout
+        <div className="row align-items-center desktop-layout" style={{padding: '3em', marginBottom: '10em'}}>
+          <div className="col-xl-6 col-lg-6 col-md-12 text-container">
+            <h1 className="headerA" style={{ color: "#DA2A52" }}>
+              Nikmati Rasa Manis<br />Raspberry DREWHITE
+            </h1>
+            {/* <h1 className="headerA" style={{ color: "#32A642" }}>
+              DREWHITE
+            </h1> */}
+            <p className="paragrafA">
+              Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar dalam setiap tegukan, dapat menutrisi tubuh dan memanjakan kulit Anda.
+            </p>
+            <a href="products" rel="noopener noreferrer">
+              <button className="redbtnC btnAnimate">LEARN MORE</button>
+            </a>
+          </div>
+
+          <div className="col-xl-6 col-lg-6 col-md-12 text-center">
+            <img className="imgA" src={ekles4} alt="Avatar" />
+          </div>
+        </div>
+      ) : (
+        // Mobile & Tablet Layout
+        <div className="row mobile-layout">
+          <div className="col-12 text-container">
+            <h1 className="headerA" style={{ color: "#DA2A52" }}>
+              Nikmati Rasa Manis Raspberry Drewhite
+            </h1>
+            {/* <h1 className="headerA" style={{ color: "#32A642" }}>
+              DREWHITE
+            </h1> */}
+          </div>
+
+          <div className="col-12 text-center">
+            <img className="imgA" src={ekles4} alt="Avatar" />
+          </div>
+
+          <div className="col-12 paragrafA">
+            <p>
+              Perkenalkan minuman kolagen rasa raspberry terbaru dari kami! Kini Anda dapat menikmati manfaat dari kolagen berkualitas tinggi dan rasa buah yang segar dalam setiap tegukan, dapat menutrisi tubuh dan memanjakan kulit Anda.
+            </p>
+          </div>
+
+          <div className="col-12 text-center">
+            <a href="products" rel="noopener noreferrer">
+              <button className="redbtnC btnAnimate">LEARN MORE</button>
+            </a>
+          </div>
+        </div>
+      )}
+    </div>
 
   <div className='containerB' style={{padding: '0 7em 5em 7em', position: 'relative', display: 'flex'}}>
     <div className="row">
@@ -106,7 +159,7 @@ const Home = () => {
   </div>
   </div>
 
-<div className="row kolagen align-items-center m-4">
+<div className="row kolagen align-items-center col-12">
   <div className="col-xl-6 col-lg-6 col-md-6">
     <h6 className='apayang1 hidden shadowHeader'>Apa yang membuat DREWHITE berbeda?</h6>
     <p className='paragrafC hidden'>
