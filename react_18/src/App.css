@@ -2529,6 +2529,12 @@ top: 2.5em;
 	max-width: 500px;
 	height: auto;
   }
+
+  .resellerModel {
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+  }
   
   .textContainer {
 	flex: 1;
@@ -2563,7 +2569,7 @@ top: 2.5em;
 	border: none;
 	border-radius: 8px;
 	padding: 0.6em 1.8em;
-	display: flex;
+	
 	align-items: center;
 	justify-content: center;
 	cursor: pointer;
@@ -2592,18 +2598,17 @@ top: 2.5em;
 	.resellerCoa {
 	  max-width: 350px;
 	}
-  }
-  
-  @media (max-width: 992px) {
+
 	.btnWA {
-	  width: 100%;
-	  padding: 0.5em 1.5em;
+		width: 100%;
+		padding: 0.5em 1.5em;
 	}
-  
-	.resellerCoa {
-	  max-width: 300px;
-	}
+
+	.resellerModel {
+		max-width: 450px;
+	  }
   }
+  
   
   @media (max-width: 576px) {
 	.headF {
@@ -2622,6 +2627,10 @@ top: 2.5em;
 	.resellerCoa {
 	  max-width: 250px;
 	}
+
+	.resellerModel {
+		max-width: 300px;
+	  }
   }
   
   

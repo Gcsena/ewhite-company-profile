@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 
 import ekles4 from '../images/ekles4.png'
 import amanda from '../images/amanda.png'
+import model2 from '../images/model2.png'
 import reseller1 from '../images/reseller1.svg'
 import reseller2 from '../images/reseller2.svg'
 import reseller3 from '../images/reseller3.svg'
@@ -39,35 +40,38 @@ const Reseller = () => {
 
   return (
     <main>
-      <div className="resellerA">
-        <div className="row">
-          <div className="col-xl col-lg col-md-1 col-sm">
-            <img className="eklesReseller" src={ekles4} alt="Avatar"></img>
+      <div style={{ backgroundColor: "#FFE2EB", marginTop: '10px' }}>
+        <div className="resellerF">
+          <div className="container">
+            <div className="row align-items-center">
+              <div className="col-lg-6 col-md-6 text-center">
+                <img className="resellerModel img-fluid" src={model2} alt="Avatar" />
+              </div>
+
+
+              <div className="col-lg-6 col-md-6 desktopMargin">
+                <h1 className="headF">
+                  BERGABUNG BERSAMA KAMI <br /> MENJADI RESELLER DREWHITE
+                </h1>
+                <p className="txtF">
+                  Hasilkan uang ratusan juta dan dapatkan kesempatan untuk liburan
+                  ke Singapore bersama DR EKLES dan Amanda Manopo
+                </p>
+                <h1 className="headF">#BISNISHALALCUANLANCAR</h1>
+                <a
+                  href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button className="btnWA">
+                    <BsWhatsapp className="iconWa" />
+                    GABUNG SEKARANG
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-          <div className="col-xl col-lg col-md-1 col-sm">
-            <img className="amanda" src={amanda} alt="Avatar"></img>
-          </div>
-          <div className="col-xl col-lg col-md-1 col-sm">
-            <h1 className="headF">
-              BERGABUNG BERSAMA KAMI <br /> MENJADI RESELLER DREWHITE
-            </h1>
-            <p className="txtF">
-              Hasilkan uang ratusan juta dan dapatkan kesempatan untuk liburan
-              ke Singapore bersama DR EKLES dan Amanda Manopo
-            </p>
-            <h1 className="headF">#BISNISHALALCUANLANCAR</h1>
-            <a
-              href="https://api.whatsapp.com/send/?phone=081211118412&text&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="buttonContainer"
-            >
-              <button className="btnWA">
-                <BsWhatsapp className="iconWa" />
-                GABUNG SEKARANG
-              </button>
-            </a>
-          </div>
+
         </div>
       </div>
 
