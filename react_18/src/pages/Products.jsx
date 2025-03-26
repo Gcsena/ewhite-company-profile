@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { Link } from 'react-scroll';
 import { Accordion2 } from '../components/accordion.jsx';
-// import lebarin from '../images/lebarin.jpg'
 import group9 from '../images/group9.svg'
+import edit2 from '../images/edit2.png'
 import produkHand from '../images/produkHand.jpg'
 import produk1 from '../images/produk1.jpg'
 import { ControlledCarousel } from '../components/carousel.jsx';
@@ -104,8 +104,8 @@ DREWHITE bermanfaat untuk : <br /> <br />
     </div>
   </div>
       <div className='containerHow'>
-        <h1 className='HowToTxt'>HOW TO DRINK</h1>
-        <img className='HowTo' src={group9} alt="Avatar"></img>
+        {/* <h1 className='HowToTxt'>HOW TO DRINK</h1> */}
+        <img className='HowTo' src={edit2} alt="Avatar"></img>
       </div>
     <div className='container' style={{marginBottom: '30px'}}>
       <div className='row'>

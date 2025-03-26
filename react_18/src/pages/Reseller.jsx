@@ -1,8 +1,6 @@
 import React from 'react'
 import { useEffect } from 'react';
 
-import ekles4 from '../images/ekles4.png'
-import amanda from '../images/amanda.png'
 import model2 from '../images/model2.png'
 import reseller1 from '../images/reseller1.svg'
 import reseller2 from '../images/reseller2.svg'
